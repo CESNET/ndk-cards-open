@@ -2,6 +2,7 @@
 # Copyright (C) 2022 CESNET z. s. p. o.
 # Author(s): Martin Matějka <xmatej55@vutbr.cz>
 #
+# SPDX-License-Identifier: BSD-3-Clause
 
 # ==============================================================================
 # Main device/configuration

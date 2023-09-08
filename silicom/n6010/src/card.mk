@@ -2,6 +2,7 @@
 # Copyright (C) 2022 CESNET z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
 #
+# SPDX-License-Identifier: BSD-3-Clause
 
 # Mandatory parameters (needs to be set in user Makefile)
 ###############################################################################

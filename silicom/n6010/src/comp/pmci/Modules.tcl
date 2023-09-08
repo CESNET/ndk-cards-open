@@ -2,6 +2,7 @@
 # Copyright (C) 2023 CESNET z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
 #
+# SPDX-License-Identifier: BSD-3-Clause
 
 # Paths
 set MI2AXI4_BASE "$OFM_PATH/comp/mi_tools/converters/mi2axi4"

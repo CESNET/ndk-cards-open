@@ -2,6 +2,7 @@
 -- Copyright (C) 2023 CESNET z. s. p. o.
 -- Author(s): Jakub Cabal <cabal@cesnet.cz>
 --
+-- SPDX-License-Identifier: BSD-3-Clause
 
 library IEEE;
 use IEEE.std_logic_1164.all;

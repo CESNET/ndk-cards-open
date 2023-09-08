@@ -2,6 +2,7 @@
 # Copyright (C) 2023 CESNET z. s. p. o.
 # Author(s): Martin Matějka <xmatej55@vutbr.cz>
 #
+# SPDX-License-Identifier: BSD-3-Clause
 
 set PMCI_TOP_BASE "$ENTITY_BASE/comp/pmci"
 

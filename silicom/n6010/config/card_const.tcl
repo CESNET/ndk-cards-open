@@ -2,6 +2,7 @@
 # Copyright (C) 2023 CESNET, z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
 #
+# SPDX-License-Identifier: BSD-3-Clause
 
 # WARNING: The user should not deliberately change parameters in this file. For
 # the description of this file, visit the Parametrization section in the
