@@ -40,6 +40,13 @@ Allowed PCIe configurations:
 - 1xGen4x8x8 -- PCIE_GEN=4, PCIE_ENDPOINTS=2, PCIE_ENDPOINT_MODE=1"
 }
 
+if {!( ($MEM_PORTS == 0) || ($MEM_PORTS == 4)) } {
+    error "Incompatible MEM_PORTS configuration: MEM_PORTS = $MEM_PORTS!
+Allowed MEM_PORTS configurations:
+- MEM_PORTS=0 -- External memory disabled, memory controllers are not instantiated.
+- MEM_PORTS=4 -- External memory enabled, four DDR4 ports are available."
+}
+
 # ------------------------------------------------------------------------------
 # Other parameters:
 # ------------------------------------------------------------------------------

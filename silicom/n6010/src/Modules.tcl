@@ -36,5 +36,8 @@ if {$ARCHGRP_ARR(NET_MOD_ARCH) == "E_TILE"} {
     }
 }
 
+lappend MOD "$ENTITY_BASE/ip/onboard_ddr4.ip"
+lappend MOD "$ENTITY_BASE/ip/ddr4_calibration.ip"
+
 # Top-level
 lappend MOD "$ENTITY_BASE/fpga.vhd"
