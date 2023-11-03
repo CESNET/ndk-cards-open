@@ -227,9 +227,6 @@ architecture FULL of FPGA is
     );
     end component;
 
-    -- DMA debug parameters
-    constant DMA_GEN_LOOP_EN : boolean := true;
-
     constant PCIE_LANES      : natural := 16;
     constant PCIE_CLKS       : natural := 2;
     constant PCIE_CONS       : natural := 1;
@@ -438,10 +435,8 @@ begin
         MEM_BURST_WIDTH         => MEM_BURST_WIDTH,
         AMM_FREQ_KHZ            => AMM_FREQ_KHZ,
 
-        BOARD                   => "IA-420F",
-        DEVICE                  => "AGILEX",
-        
-        DMA_GEN_LOOP_EN         => DMA_GEN_LOOP_EN
+        BOARD                   => CARD_NAME,
+        DEVICE                  => "AGILEX"
     )
     port map(
         SYSCLK                 => SYS_CLK_50M,

@@ -382,7 +382,6 @@ architecture FULL of FPGA is
     constant MISC_OUT_WIDTH  : integer := 64 + 5;
     constant ETH_LANES       : integer := 8;
     constant DMA_ENDPOINTS   : integer := f_dma_endpoints(PCIE_ENDPOINTS,PCIE_ENDPOINT_MODE,PCIE_GEN);
-    constant DMA_GLS_EN      : boolean := true;
     constant USE_SODIMM_MEM  : boolean := not TEST_FW_PCIE1_ONBOARD_DDR4;
     constant MEM_PORTS       : integer := tsel(USE_SODIMM_MEM,2,1);
     constant MEM_ADDR_WIDTH  : integer := tsel(USE_SODIMM_MEM,29,26); --HPS:26, SODIMM:29;
@@ -535,8 +534,7 @@ begin
         DMA_ENDPOINTS           => DMA_ENDPOINTS,
         DMA_MODULES             => 1,
         DMA_RX_CHANNELS         => DMA_RX_CHANNELS,
-        DMA_TX_CHANNELS         => DMA_TX_CHANNELS,
-        DMA_GEN_LOOP_EN         => DMA_GLS_EN
+        DMA_TX_CHANNELS         => DMA_TX_CHANNELS
     )
     port map(
         SYSCLK                  => AG_SYSCLK1_P,

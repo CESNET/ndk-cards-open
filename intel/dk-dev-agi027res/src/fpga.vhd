@@ -210,8 +210,6 @@ architecture FULL of FPGA is
     end function;
 
     constant DEVICE                 : string := "AGILEX";
-    -- DMA debug parameters
-    constant DMA_GEN_LOOP_EN        : boolean := true;
 
     constant PCIE_LANES             : integer := 16;
     constant PCIE_CLKS              : integer := 2;
@@ -358,10 +356,8 @@ begin
         MEM_DEF_REFR_PERIOD     => MEM_DEF_REFR_PERIOD,
         AMM_FREQ_KHZ            => 333_332,
 
-        BOARD                   => "DK-DEV-AGI027RES",
-        DEVICE                  => DEVICE,
-
-        DMA_GEN_LOOP_EN         => DMA_GEN_LOOP_EN
+        BOARD                   => CARD_NAME,
+        DEVICE                  => DEVICE
     )
     port map(
         SYSCLK                  => clk_sys_100m_p,

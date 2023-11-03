@@ -72,9 +72,6 @@ end entity;
 
 architecture FULL of FPGA is
 
-    -- DMA debug parameters
-    constant DMA_GEN_LOOP_EN     : boolean := true;
-
     constant PCIE_CLKS           : integer := 1;
     constant PCIE_CONS           : integer := 1;
     constant MISC_IN_WIDTH       : integer := 4;
@@ -210,15 +207,13 @@ begin
         DMA_TX_CHANNELS         => DMA_TX_CHANNELS/DMA_MODULES,
 
         BOARD                   => BOARD,
-        DEVICE                  => DEVICE,
+        DEVICE                  => DEVICE
 
         --AMM_FREQ_KHZ            => DDR_FREQ,
         --MEM_PORTS               => DDR_PORTS,
         --MEM_ADDR_WIDTH          => AMM_ADDR_WIDTH,
         --MEM_DATA_WIDTH          => AMM_DATA_WIDTH,
         --MEM_BURST_WIDTH         => AMM_BURST_COUNT_WIDTH,
-
-        DMA_GEN_LOOP_EN         => DMA_GEN_LOOP_EN
     )
     port map(
         SYSCLK                  => sysclk_bufg,
