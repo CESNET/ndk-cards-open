@@ -796,7 +796,15 @@ begin
     -- FPGA COMMON -------------------------------------------------------------
     usp_i : entity work.FPGA_COMMON
     generic map (
-        SYSCLK_FREQ             => 50,
+        SYSCLK_PERIOD           => 20.0,
+        PLL_MULT_F              => 24.0,
+        PLL_MASTER_DIV          => 1,
+        PLL_OUT0_DIV_F          => 3.0,
+        PLL_OUT1_DIV            => 5,
+        PLL_OUT2_DIV            => 6,
+        PLL_OUT3_DIV            => 15,
+
+        USE_PCIE_CLK            => FALSE,
 
         PCIE_LANES              => PCIE_LANES,
         PCIE_CLKS               => PCIE_CLKS,

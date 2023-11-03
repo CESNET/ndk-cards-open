@@ -171,8 +171,15 @@ begin
     -- FPGA COMMON -------------------------------------------------------------
     cm_i : entity work.FPGA_COMMON
     generic map (
-        SYSCLK_FREQ             => 250, -- PCIe AXI clock frequency
-        USE_PCIE_CLK            => true,
+        SYSCLK_PERIOD           => 6.4,
+        PLL_MULT_F              => 7.625,  -- creates slightly lower output frequency, should be 7.68
+        PLL_MASTER_DIV          => 1,
+        PLL_OUT0_DIV_F          => 3.0,
+        PLL_OUT1_DIV            => 4,
+        PLL_OUT2_DIV            => 6,
+        PLL_OUT3_DIV            => 12,
+
+        USE_PCIE_CLK            => false,
         
         PCIE_LANES              => PCIE_LANES,
         PCIE_CLKS               => PCIE_CLKS,
