@@ -26,7 +26,8 @@ set SYNTH_FLAGS(ROUTE_DIRECTIVE) "Explore"
 # Propagating card constants to the Modules.tcl files of the underlying components.
 # The description of usage of this array is provided in the Parametrization section
 # of the NDK-CORE repository documentation.
-set CARD_ARCHGRP(CORE_BASE) $CORE_BASE
+set CARD_ARCHGRP(CORE_BASE)          $CORE_BASE
+set CARD_ARCHGRP(PCIE_ENDPOINT_MODE) $PCIE_ENDPOINT_MODE
 
 # make lists from associative arrays
 set CARD_ARCHGRP_L [array get CARD_ARCHGRP]

@@ -19,8 +19,13 @@ lappend COMPONENTS [list "BOOT_CTRL"        $BOOT_CTRL_BASE          "FULL"  ]
 lappend COMPONENTS [list "SPI_FLASH_DRIVER" $SPI_FLASH_DRIVER_BASE   "FULL"  ]
 lappend COMPONENTS [list "AXI2AVMM_BRIDGE"  $AXI2AVMM_BRIDGE_BASE    "FULL"  ]
 
+if {$ARCHGRP_ARR(PCIE_ENDPOINT_MODE) == 2} {
+    lappend MOD "$ENTITY_BASE/ip/pcie4_uscale_plus/x8_low_latency/pcie4_uscale_plus.xci"
+} else {
+    lappend MOD "$ENTITY_BASE/ip/pcie4_uscale_plus/x16/pcie4_uscale_plus.xci"
+}
+
 # IP sources
-lappend MOD "$ENTITY_BASE/ip/pcie4_uscale_plus/pcie4_uscale_plus.xci"
 lappend MOD "$ENTITY_BASE/ip/xvc_vsec/xvc_vsec.xci"
 lappend MOD "$ENTITY_BASE/ip/ddr4_axi/ddr4_axi.xci"
 
