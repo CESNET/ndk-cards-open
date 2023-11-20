@@ -532,7 +532,7 @@ begin
         MISC_IN_WIDTH           => MISC_IN_WIDTH,
         MISC_OUT_WIDTH          => MISC_OUT_WIDTH,
 
-        BOARD                   => "400G1",
+        BOARD                   => CARD_NAME,
         DEVICE                  => DEVICE,
 
         PCIE_ENDPOINTS          => PCIE_ENDPOINTS,

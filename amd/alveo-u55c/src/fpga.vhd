@@ -1465,7 +1465,7 @@ begin
         MISC_IN_WIDTH           => MISC_IN_WIDTH,
         MISC_OUT_WIDTH          => MISC_OUT_WIDTH,
 
-        BOARD                   => BOARD,
+        BOARD                   => CARD_NAME,
         DEVICE                  => DEVICE
     )
     port map(

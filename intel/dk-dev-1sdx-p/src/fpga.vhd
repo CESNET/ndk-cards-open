@@ -301,7 +301,7 @@ begin
         MEM_BURST_WIDTH         => MEM_BURST_WIDTH,
         AMM_FREQ_KHZ            => 266660,
 
-        BOARD                   => "DK-DEV-1SDX-P",
+        BOARD                   => CARD_NAME,
         DEVICE                  => "STRATIX10",
 
         DMA_400G_DEMO           => DMA_400G_DEMO

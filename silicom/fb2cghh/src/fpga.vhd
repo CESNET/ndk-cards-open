@@ -137,7 +137,6 @@ architecture FULL of FPGA is
     constant ETH_LANES           : integer := 4;
     constant DMA_MODULES         : integer := PCIE_ENDPOINTS;
     constant DMA_ENDPOINTS       : integer := PCIE_ENDPOINTS;
-    constant BOARD               : string  := "FB2CGHH";
     constant ETH_LANE_MAP        : integer_vector(2*ETH_LANES-1 downto 0) := (3, 2, 1, 0, 3, 2, 1, 0);
     constant ETH_LANE_RXPOLARITY : std_logic_vector(2*ETH_LANES-1 downto 0) := "00000000";
     constant ETH_LANE_TXPOLARITY : std_logic_vector(2*ETH_LANES-1 downto 0) := "00000000";
@@ -962,7 +961,7 @@ begin
         DMA_RX_CHANNELS         => DMA_RX_CHANNELS/DMA_MODULES,
         DMA_TX_CHANNELS         => DMA_TX_CHANNELS/DMA_MODULES,
 
-        BOARD                   => BOARD,
+        BOARD                   => CARD_NAME,
         DEVICE                  => DEVICE,
 
         AMM_FREQ_KHZ            => DDR_FREQ,

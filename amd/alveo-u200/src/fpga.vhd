@@ -213,7 +213,7 @@ begin
         DMA_RX_CHANNELS         => DMA_RX_CHANNELS/DMA_MODULES,
         DMA_TX_CHANNELS         => DMA_TX_CHANNELS/DMA_MODULES,
 
-        BOARD                   => BOARD,
+        BOARD                   => CARD_NAME,
         DEVICE                  => DEVICE
 
         --AMM_FREQ_KHZ            => DDR_FREQ,
