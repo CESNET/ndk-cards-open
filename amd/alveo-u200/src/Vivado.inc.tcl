@@ -51,7 +51,7 @@ if {$PCIE_ENDPOINT_MODE == 0} {
 
 if {$NET_MOD_ARCH != "EMPTY"} {
     lappend SYNTH_FLAGS(CONSTR) "$CARD_BASE/constr/qsfp.xdc"
-    lappend SYNTH_FLAGS(CONSTR) [list "$CARD_BASE/constr/qsfp_loc.xdc" USED_IN implementation]
+    lappend SYNTH_FLAGS(CONSTR) [list "$CARD_BASE/constr/gty_loc.xdc" USED_IN implementation]
 } else {
     lappend SYNTH_FLAGS(CONSTR) "$CARD_BASE/constr/qsfp_disconnect.xdc"
 
