@@ -21,9 +21,9 @@ lappend COMPONENTS [list "AXI_QSPI_FLASH_CTRL" $AXI_QSPI_FLASH_CTRL_BASE "FULL" 
 # IP sources
 lappend MOD "$ENTITY_BASE/ip/axi_quad_spi/axi_quad_spi_0.xci"
 lappend MOD "$ENTITY_BASE/ip/pcie_gen3_x16/pcie4_uscale_plus.xci"
-#if {$ARCHGRP_ARR(XVC_ENABLE)} {
-lappend MOD "$ENTITY_BASE/ip/xvc_vsec/xvc_vsec.xci"
-#}
+if {$ARCHGRP_ARR(VIRTUAL_DEBUG_ENABLE)} {
+    lappend MOD "$ENTITY_BASE/ip/xvc_vsec/xvc_vsec.xci"
+}
 
 lappend MOD "$ENTITY_BASE/ip/hbm/hbm_ip.xci"
 

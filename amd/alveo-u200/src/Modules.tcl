@@ -22,7 +22,7 @@ if {$ARCHGRP_ARR(PCIE_ENDPOINTS) == 1} {
     }
 }
 
-if {$ARCHGRP_ARR(XVC_ENABLE)} {
+if {$ARCHGRP_ARR(VIRTUAL_DEBUG_ENABLE)} {
     lappend MOD "$ENTITY_BASE/ip/xvc_vsec/xvc_vsec.xci"
 }
 

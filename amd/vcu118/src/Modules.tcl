@@ -18,7 +18,7 @@ if {$ARCHGRP_ARR(PCIE_ENDPOINT_MODE) == 0} {
     lappend MOD "$ENTITY_BASE/ip/pcie4_uscale_plus/x8_low_latency/pcie4_uscale_plus.xci"
 }
 
-if {$ARCHGRP_ARR(XVC_ENABLE)} {
+if {$ARCHGRP_ARR(VIRTUAL_DEBUG_ENABLE)} {
     lappend MOD "$ENTITY_BASE/ip/xvc_vsec/xvc_vsec.xci"
 }
 
