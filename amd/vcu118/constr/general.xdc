@@ -69,4 +69,4 @@ set_false_path -to                  [get_ports -filter NAME=~STATUS_LED*]
 # set_property IOSTANDARD LVCMOS18 [get_ports QLED_CLK]
 
 # Lock DNA_PORT2E to X0Y1 due to different Chip ID in each SLRs
-set_property LOC CONFIG_SITE_X0Y1 [get_cells usp_i/hwid_i/usp_g.dna_port_i]
+set_property LOC CONFIG_SITE_X0Y1 [get_cells cm_i/hwid_i/usp_g.dna_port_i]
