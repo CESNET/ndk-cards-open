@@ -130,9 +130,6 @@ end entity;
 
 architecture FULL of FPGA is
 
-    -- DMA debug parameters
-    constant DMA_GEN_LOOP_EN     : boolean := true;
-
     constant PCIE_CLKS           : integer := 1;
     constant PCIE_CONS           : integer := 1;
     constant MISC_IN_WIDTH       : integer := 1+1+32+1+1+32;
@@ -140,7 +137,6 @@ architecture FULL of FPGA is
     constant ETH_LANES           : integer := 4;
     constant DMA_MODULES         : integer := PCIE_ENDPOINTS;
     constant DMA_ENDPOINTS       : integer := PCIE_ENDPOINTS;
-    constant BOARD               : string  := "FB2CGHH";
     constant ETH_LANE_MAP        : integer_vector(2*ETH_LANES-1 downto 0) := (3, 2, 1, 0, 3, 2, 1, 0);
     constant ETH_LANE_RXPOLARITY : std_logic_vector(2*ETH_LANES-1 downto 0) := "00000000";
     constant ETH_LANE_TXPOLARITY : std_logic_vector(2*ETH_LANES-1 downto 0) := "00000000";
@@ -923,9 +919,16 @@ begin
     -- FPGA COMMON -------------------------------------------------------------
     usp_i : entity work.FPGA_COMMON
     generic map (
-        SYSCLK_FREQ             => 250,
-        USE_PCIE_CLK            => true,
-        
+        SYSCLK_PERIOD           => 4.0,
+        PLL_MULT_F              => 48.0,
+        PLL_MASTER_DIV          => 10,
+        PLL_OUT0_DIV_F          => 3.0,
+        PLL_OUT1_DIV            => 4,
+        PLL_OUT2_DIV            => 6,
+        PLL_OUT3_DIV            => 12,
+
+        USE_PCIE_CLK            => TRUE,
+
         PCIE_LANES              => PCIE_LANES,
         PCIE_CLKS               => PCIE_CLKS,
         PCIE_CONS               => PCIE_CONS,
@@ -958,16 +961,14 @@ begin
         DMA_RX_CHANNELS         => DMA_RX_CHANNELS/DMA_MODULES,
         DMA_TX_CHANNELS         => DMA_TX_CHANNELS/DMA_MODULES,
 
-        BOARD                   => BOARD,
+        BOARD                   => CARD_NAME,
         DEVICE                  => DEVICE,
 
         AMM_FREQ_KHZ            => DDR_FREQ,
         MEM_PORTS               => DDR_PORTS,
         MEM_ADDR_WIDTH          => AMM_ADDR_WIDTH,
         MEM_DATA_WIDTH          => AMM_DATA_WIDTH,
-        MEM_BURST_WIDTH         => AMM_BURST_COUNT_WIDTH,
-
-        DMA_GEN_LOOP_EN         => DMA_GEN_LOOP_EN
+        MEM_BURST_WIDTH         => AMM_BURST_COUNT_WIDTH
     )
     port map(
         SYSCLK                  => sysclk_bufg,

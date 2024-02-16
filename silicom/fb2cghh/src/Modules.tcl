@@ -24,13 +24,10 @@ lappend COMPONENTS [list "BOOT_CTRL"                    $BOOT_CTRL_BASE         
 lappend COMPONENTS [list "AXI2AVMM_BRIDGE"              $AXI2AVMM_BRIDGE_BASE            "FULL"  ]
 
 # IP sources
-if {$ARCHGRP_ARR(PCIE_ENDPOINTS) == 1} {
-
-    if {$ARCHGRP_ARR(PCIE_ENDPOINT_MODE) == 2} {
-        lappend MOD "$ENTITY_BASE/ip/pcie4_uscale_plus/x8_low_latency/pcie4_uscale_plus.xci"
-    } else {
-        lappend MOD "$ENTITY_BASE/ip/pcie4_uscale_plus/x16/pcie4_uscale_plus.xci"
-    }
+if {$ARCHGRP_ARR(PCIE_ENDPOINT_MODE) == 2} {
+    lappend MOD "$ENTITY_BASE/ip/pcie4_uscale_plus/x8_low_latency/pcie4_uscale_plus.xci"
+} else {
+    lappend MOD "$ENTITY_BASE/ip/pcie4_uscale_plus/x16/pcie4_uscale_plus.xci"
 }
 
 if { $ARCHGRP_ARR(NET_MOD_ARCH) == "40GE"} {

@@ -382,7 +382,6 @@ architecture FULL of FPGA is
     constant MISC_OUT_WIDTH  : integer := 64 + 5;
     constant ETH_LANES       : integer := 8;
     constant DMA_ENDPOINTS   : integer := f_dma_endpoints(PCIE_ENDPOINTS,PCIE_ENDPOINT_MODE,PCIE_GEN);
-    constant DMA_GLS_EN      : boolean := true;
     constant USE_SODIMM_MEM  : boolean := not TEST_FW_PCIE1_ONBOARD_DDR4;
     constant MEM_PORTS       : integer := tsel(USE_SODIMM_MEM,2,1);
     constant MEM_ADDR_WIDTH  : integer := tsel(USE_SODIMM_MEM,29,26); --HPS:26, SODIMM:29;
@@ -495,6 +494,14 @@ begin
 
     ag_i : entity work.FPGA_COMMON
     generic map (
+        SYSCLK_PERIOD           => 10,
+        PLL_MULT_F              => 12.0,
+        PLL_MASTER_DIV          => 1,
+        PLL_OUT0_DIV_F          => 3.0,
+        PLL_OUT1_DIV            => 4,
+        PLL_OUT2_DIV            => 6,
+        PLL_OUT3_DIV            => 12,
+
         PCIE_CONS               => PCIE_CONS,
         PCIE_LANES              => PCIE_LANES,
         PCIE_CLKS               => PCIE_CLKS,
@@ -525,7 +532,7 @@ begin
         MISC_IN_WIDTH           => MISC_IN_WIDTH,
         MISC_OUT_WIDTH          => MISC_OUT_WIDTH,
 
-        BOARD                   => "400G1",
+        BOARD                   => CARD_NAME,
         DEVICE                  => DEVICE,
 
         PCIE_ENDPOINTS          => PCIE_ENDPOINTS,
@@ -535,8 +542,7 @@ begin
         DMA_ENDPOINTS           => DMA_ENDPOINTS,
         DMA_MODULES             => 1,
         DMA_RX_CHANNELS         => DMA_RX_CHANNELS,
-        DMA_TX_CHANNELS         => DMA_TX_CHANNELS,
-        DMA_GEN_LOOP_EN         => DMA_GLS_EN
+        DMA_TX_CHANNELS         => DMA_TX_CHANNELS
     )
     port map(
         SYSCLK                  => AG_SYSCLK1_P,

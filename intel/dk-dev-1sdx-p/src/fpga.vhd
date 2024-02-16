@@ -178,9 +178,6 @@ architecture FULL of FPGA is
     );
     end component;
     
-    -- DMA debug parameters
-    constant DMA_GEN_LOOP_EN : boolean := true;
-
     constant PCIE_LANES     : integer := 16;
     constant PCIE_CLKS      : integer := 2;
     constant PCIE_CONS      : integer := 2;
@@ -260,6 +257,16 @@ begin
 
     cm_i : entity work.FPGA_COMMON
     generic map (
+        SYSCLK_PERIOD           => 10,
+        PLL_MULT_F              => 12.0,
+        PLL_MASTER_DIV          => 1,
+        PLL_OUT0_DIV_F          => 3.0,
+        PLL_OUT1_DIV            => 4,
+        PLL_OUT2_DIV            => 6,
+        PLL_OUT3_DIV            => 12,
+
+        USE_PCIE_CLK            => FALSE,
+
         PCIE_LANES              => PCIE_LANES,
         PCIE_CLKS               => PCIE_CLKS,
         PCIE_CONS               => PCIE_CONS,
@@ -294,11 +301,10 @@ begin
         MEM_BURST_WIDTH         => MEM_BURST_WIDTH,
         AMM_FREQ_KHZ            => 266660,
 
-        BOARD                   => "DK-DEV-1SDX-P",
+        BOARD                   => CARD_NAME,
         DEVICE                  => "STRATIX10",
 
-        DMA_400G_DEMO           => DMA_400G_DEMO,
-        DMA_GEN_LOOP_EN         => DMA_GEN_LOOP_EN
+        DMA_400G_DEMO           => DMA_400G_DEMO
     )
     port map(
         SYSCLK                  => FPGA_SYSCLK0_100M_P,

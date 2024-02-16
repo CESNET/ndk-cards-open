@@ -27,10 +27,10 @@ port (
     PCIE_SYSCLK_P       : in    std_logic;
     PCIE_SYSCLK_N       : in    std_logic;
     PCIE_SYSRST_N       : in    std_logic;
-    PCIE_RX_P           : in    std_logic_vector(16-1 downto 0);
-    PCIE_RX_N           : in    std_logic_vector(16-1 downto 0);
-    PCIE_TX_P           : out   std_logic_vector(16-1 downto 0);
-    PCIE_TX_N           : out   std_logic_vector(16-1 downto 0);
+    PCIE_RX_P           : in    std_logic_vector(PCIE_LANES-1 downto 0);
+    PCIE_RX_N           : in    std_logic_vector(PCIE_LANES-1 downto 0);
+    PCIE_TX_P           : out   std_logic_vector(PCIE_LANES-1 downto 0);
+    PCIE_TX_N           : out   std_logic_vector(PCIE_LANES-1 downto 0);
 
     -- 50 MHz external clock
     REFCLK              : in    std_logic;
@@ -162,10 +162,6 @@ end entity;
 
 architecture FULL of FPGA is
 
-    -- DMA debug parameters
-    constant DMA_GEN_LOOP_EN     : boolean := true;
-
-    constant PCIE_LANES          : integer := 16;
     constant PCIE_CLKS           : integer := 1;
     constant PCIE_CONS           : integer := 1;
     constant MISC_IN_WIDTH       : integer := 64;
@@ -173,7 +169,6 @@ architecture FULL of FPGA is
     constant ETH_LANES           : integer := 4;
     constant DMA_MODULES         : integer := PCIE_ENDPOINTS;
     constant DMA_ENDPOINTS       : integer := PCIE_ENDPOINTS;
-    constant BOARD               : string  := "FB4CGG3"; --tsel(ETH_PORTS=4,"FB4CGG3","FB2CGG3")
     constant ETH_LANE_MAP        : integer_vector(4*ETH_LANES-1 downto 0) := (3, 2, 1, 0, 3, 2, 1, 0, 3, 2, 1, 0, 3, 2, 1, 0);
     constant ETH_LANE_RXPOLARITY : std_logic_vector(4*ETH_LANES-1 downto 0) := "1000100010001000";
     constant ETH_LANE_TXPOLARITY : std_logic_vector(4*ETH_LANES-1 downto 0) := "1111111111111111";
@@ -799,7 +794,15 @@ begin
     -- FPGA COMMON -------------------------------------------------------------
     usp_i : entity work.FPGA_COMMON
     generic map (
-        SYSCLK_FREQ             => 50,
+        SYSCLK_PERIOD           => 20.0,
+        PLL_MULT_F              => 24.0,
+        PLL_MASTER_DIV          => 1,
+        PLL_OUT0_DIV_F          => 3.0,
+        PLL_OUT1_DIV            => 5,
+        PLL_OUT2_DIV            => 6,
+        PLL_OUT3_DIV            => 15,
+
+        USE_PCIE_CLK            => FALSE,
 
         PCIE_LANES              => PCIE_LANES,
         PCIE_CLKS               => PCIE_CLKS,
@@ -833,16 +836,14 @@ begin
         DMA_RX_CHANNELS         => DMA_RX_CHANNELS/DMA_MODULES,
         DMA_TX_CHANNELS         => DMA_TX_CHANNELS/DMA_MODULES,
 
-        BOARD                   => BOARD,
+        BOARD                   => CARD_NAME,
         DEVICE                  => DEVICE,
 
         AMM_FREQ_KHZ            => 300000,
         MEM_PORTS               => DDR_PORTS,
         MEM_ADDR_WIDTH          => AMM_ADDR_WIDTH,
         MEM_DATA_WIDTH          => AMM_DATA_WIDTH,
-        MEM_BURST_WIDTH         => AMM_BURST_COUNT_WIDTH,
-
-        DMA_GEN_LOOP_EN         => DMA_GEN_LOOP_EN
+        MEM_BURST_WIDTH         => AMM_BURST_COUNT_WIDTH
     )
     port map(
         SYSCLK                  => sysclk_bufg,

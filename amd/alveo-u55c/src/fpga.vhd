@@ -69,9 +69,6 @@ end entity;
 
 architecture FULL of FPGA is
 
-    -- DMA debug parameters
-    constant DMA_GEN_LOOP_EN     : boolean := true;
-
     constant PCIE_CLKS           : integer := 1;
     constant PCIE_CONS           : integer := 1;
     constant MISC_IN_WIDTH       : integer := 4;
@@ -1418,7 +1415,14 @@ begin
 
     cm_i : entity work.FPGA_COMMON
     generic map (
-        SYSCLK_FREQ             => 100,
+        SYSCLK_PERIOD           => 10.0,
+        PLL_MULT_F              => 12.0,
+        PLL_MASTER_DIV          => 1,
+        PLL_OUT0_DIV_F          => 3.0,
+        PLL_OUT1_DIV            => 4,
+        PLL_OUT2_DIV            => 6,
+        PLL_OUT3_DIV            => 12,
+
         USE_PCIE_CLK            => False,
         
         PCIE_LANES              => PCIE_LANES,
@@ -1432,7 +1436,6 @@ begin
         DMA_MODULES             => DMA_MODULES,
         DMA_RX_CHANNELS         => DMA_RX_CHANNELS/DMA_MODULES,
         DMA_TX_CHANNELS         => DMA_TX_CHANNELS/DMA_MODULES,
-        DMA_GEN_LOOP_EN         => DMA_GEN_LOOP_EN,
 
         ETH_CORE_ARCH           => NET_MOD_ARCH,
         ETH_PORTS               => ETH_PORTS,
@@ -1462,7 +1465,7 @@ begin
         MISC_IN_WIDTH           => MISC_IN_WIDTH,
         MISC_OUT_WIDTH          => MISC_OUT_WIDTH,
 
-        BOARD                   => BOARD,
+        BOARD                   => CARD_NAME,
         DEVICE                  => DEVICE
     )
     port map(

@@ -72,9 +72,6 @@ end entity;
 
 architecture FULL of FPGA is
 
-    -- DMA debug parameters
-    constant DMA_GEN_LOOP_EN     : boolean := true;
-
     constant PCIE_CLKS           : integer := 1;
     constant PCIE_CONS           : integer := 1;
     constant MISC_IN_WIDTH       : integer := 4;
@@ -174,8 +171,15 @@ begin
     -- FPGA COMMON -------------------------------------------------------------
     cm_i : entity work.FPGA_COMMON
     generic map (
-        SYSCLK_FREQ             => 250, -- PCIe AXI clock frequency
-        USE_PCIE_CLK            => true,
+        SYSCLK_PERIOD           => 6.4,
+        PLL_MULT_F              => 7.625,  -- creates slightly lower output frequency, should be 7.68
+        PLL_MASTER_DIV          => 1,
+        PLL_OUT0_DIV_F          => 3.0,
+        PLL_OUT1_DIV            => 4,
+        PLL_OUT2_DIV            => 6,
+        PLL_OUT3_DIV            => 12,
+
+        USE_PCIE_CLK            => false,
         
         PCIE_LANES              => PCIE_LANES,
         PCIE_CLKS               => PCIE_CLKS,
@@ -209,16 +213,14 @@ begin
         DMA_RX_CHANNELS         => DMA_RX_CHANNELS/DMA_MODULES,
         DMA_TX_CHANNELS         => DMA_TX_CHANNELS/DMA_MODULES,
 
-        BOARD                   => BOARD,
-        DEVICE                  => DEVICE,
+        BOARD                   => CARD_NAME,
+        DEVICE                  => DEVICE
 
         --AMM_FREQ_KHZ            => DDR_FREQ,
         --MEM_PORTS               => DDR_PORTS,
         --MEM_ADDR_WIDTH          => AMM_ADDR_WIDTH,
         --MEM_DATA_WIDTH          => AMM_DATA_WIDTH,
         --MEM_BURST_WIDTH         => AMM_BURST_COUNT_WIDTH,
-
-        DMA_GEN_LOOP_EN         => DMA_GEN_LOOP_EN
     )
     port map(
         SYSCLK                  => sysclk_bufg,
