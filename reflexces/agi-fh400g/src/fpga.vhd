@@ -494,7 +494,7 @@ begin
 
     ag_i : entity work.FPGA_COMMON
     generic map (
-        SYSCLK_PERIOD           => 10,
+        SYSCLK_PERIOD           => 10.0,
         PLL_MULT_F              => 12.0,
         PLL_MASTER_DIV          => 1,
         PLL_OUT0_DIV_F          => 3.0,
