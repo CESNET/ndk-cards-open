@@ -48,3 +48,4 @@ if {$ETH_PORTS == 2} {
     lappend SYNTH_FLAGS(CONSTR) "$CARD_BASE/constr/qsfp_fb2_only.xdc"
 }
 lappend SYNTH_FLAGS(CONSTR) [list "$CARD_BASE/constr/qsfp_loc.xdc" USED_IN implementation]
+lappend SYNTH_FLAGS(CONSTR) [list "$CARD_BASE/constr/gty_10ge_ll.xdc" USED_IN implementation]

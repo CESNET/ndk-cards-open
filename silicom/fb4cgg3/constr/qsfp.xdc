@@ -7,6 +7,7 @@
 # QSFP port 0 - FB4CGG3 only ---------------------------------------------------
 set_property PACKAGE_PIN R36 [get_ports {QSFP0_REFCLK_P}]
 set_property PACKAGE_PIN R37 [get_ports {QSFP0_REFCLK_N}]
+create_clock -name qsfp0_refclk -period 6.206 [get_ports QSFP0_REFCLK_P]
 
 set_property PACKAGE_PIN N40 [get_ports {QSFP0_TX_P[0]}]
 set_property PACKAGE_PIN N41 [get_ports {QSFP0_TX_N[0]}]
@@ -31,6 +32,7 @@ set_property PACKAGE_PIN K44 [get_ports {QSFP0_RX_N[3]}]
 # QSFP port 1 - FB4CGG3 only ---------------------------------------------------
 set_property PACKAGE_PIN AC36 [get_ports {QSFP1_REFCLK_P}] 
 set_property PACKAGE_PIN AC37 [get_ports {QSFP1_REFCLK_N}] 
+create_clock -name qsfp1_refclk -period 6.206 [get_ports QSFP1_REFCLK_P]
 
 set_property PACKAGE_PIN AA40 [get_ports {QSFP1_TX_P[0]}]
 set_property PACKAGE_PIN AA41 [get_ports {QSFP1_TX_N[0]}]
@@ -55,6 +57,7 @@ set_property PACKAGE_PIN V44 [get_ports {QSFP1_RX_N[3]}]
 # QSFP port 2 - FB4CGG3/FB2CGG3 ------------------------------------------------
 set_property PACKAGE_PIN AL36 [get_ports {QSFP2_REFCLK_P}]
 set_property PACKAGE_PIN AL37 [get_ports {QSFP2_REFCLK_N}]
+create_clock -name qsfp2_refclk -period 6.206 [get_ports QSFP2_REFCLK_P]
 
 set_property PACKAGE_PIN AJ40 [get_ports {QSFP2_TX_P[0]}]
 set_property PACKAGE_PIN AJ41 [get_ports {QSFP2_TX_N[0]}]
@@ -79,6 +82,7 @@ set_property PACKAGE_PIN AF44 [get_ports {QSFP2_RX_N[3]}]
 # QSFP port 3 - FB4CGG3/FB2CGG3 ------------------------------------------------
 set_property PACKAGE_PIN AU36 [get_ports {QSFP3_REFCLK_P}]
 set_property PACKAGE_PIN AU37 [get_ports {QSFP3_REFCLK_N}]
+create_clock -name qsfp3_refclk -period 6.206 [get_ports QSFP3_REFCLK_P]
 
 set_property PACKAGE_PIN AU40 [get_ports {QSFP3_TX_P[0]}]
 set_property PACKAGE_PIN AU41 [get_ports {QSFP3_TX_N[0]}]
