@@ -38,3 +38,11 @@ Allowed PCIe configurations:
 - 1xGen5x8x8 -- PCIE_GEN=5, PCIE_ENDPOINTS=2, PCIE_ENDPOINT_MODE=1
 - 2xGen4x8x8 -- PCIE_GEN=4, PCIE_ENDPOINTS=4, PCIE_ENDPOINT_MODE=1"
 }
+
+# ------------------------------------------------------------------------------
+# Other parameters:
+# ------------------------------------------------------------------------------
+
+# Current setup is same for all IP cores, due to use of one pll with frequency (830,156Mhz), for all IP's:
+# This setup value is defined as half of pll frequency
+set TSU_FREQUENCY 415039062

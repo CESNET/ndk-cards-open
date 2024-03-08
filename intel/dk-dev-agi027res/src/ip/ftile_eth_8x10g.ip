@@ -16,14 +16,14 @@ https://fpgasoftware.intel.com/eula.-->
   <ipxact:vendor>Intel Corporation</ipxact:vendor>
   <ipxact:library>ftile_eth_8x10g</ipxact:library>
   <ipxact:name>eth_f_0</ipxact:name>
-  <ipxact:version>6.0.0</ipxact:version>
+  <ipxact:version>8.0.0</ipxact:version>
   <ipxact:busInterfaces>
     <ipxact:busInterface>
       <ipxact:name>i_tx_clk</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -57,10 +57,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>i_rx_clk</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -94,10 +94,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>o_clk_pll</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -141,10 +141,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>i_reconfig_clk</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -178,10 +178,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>i_reconfig_reset</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -210,10 +210,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>o_sys_pll_locked</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -247,10 +247,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>serial</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -308,10 +308,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>i_clk_ref</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="ftile_hssi_reference_clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="ftile_hssi_reference_clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="ftile_hssi_reference_clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="ftile_hssi_reference_clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -335,10 +335,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>i_clk_sys</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="ftile_hssi_system_clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="ftile_hssi_system_clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="ftile_hssi_system_clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="ftile_hssi_system_clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -362,10 +362,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>reconfig_eth_slave</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -669,10 +669,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>i_rst_n</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -701,10 +701,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>i_tx_rst_n</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -733,10 +733,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>i_rx_rst_n</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -765,10 +765,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>reset_status_ports</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -818,10 +818,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>clock_status_ports</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -879,10 +879,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>clk_tx_div</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -926,10 +926,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>clk_rec_div64</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -973,10 +973,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>clk_rec_div</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1020,10 +1020,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>status_ports</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1105,10 +1105,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>tx_mac_seg</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1190,10 +1190,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>rx_mac_seg</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1275,10 +1275,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>pfc_ports</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1296,6 +1296,35 @@ https://fpgasoftware.intel.com/eula.-->
                 <ipxact:name>o_rx_pfc</ipxact:name>
               </ipxact:physicalPort>
             </ipxact:portMap>
+          </ipxact:portMaps>
+        </ipxact:abstractionType>
+      </ipxact:abstractionTypes>
+      <ipxact:slave></ipxact:slave>
+      <ipxact:parameters>
+        <ipxact:parameter parameterId="associatedClock" type="string">
+          <ipxact:name>associatedClock</ipxact:name>
+          <ipxact:displayName>associatedClock</ipxact:displayName>
+          <ipxact:value></ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="associatedReset" type="string">
+          <ipxact:name>associatedReset</ipxact:name>
+          <ipxact:displayName>associatedReset</ipxact:displayName>
+          <ipxact:value></ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="prSafe" type="bit">
+          <ipxact:name>prSafe</ipxact:name>
+          <ipxact:displayName>Partial Reconfiguration Safe</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+      </ipxact:parameters>
+    </ipxact:busInterface>
+    <ipxact:busInterface>
+      <ipxact:name>sfc_ports</ipxact:name>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
+      <ipxact:abstractionTypes>
+        <ipxact:abstractionType>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
+          <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
                 <ipxact:name>i_tx_pause</ipxact:name>
@@ -1336,10 +1365,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>reconfig_xcvr_slave_0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1643,10 +1672,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>i_clk_pll</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.2"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.2"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -2295,7 +2324,7 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:access>read-only</ipxact:access>
           <ipxact:field>
             <ipxact:name>clk_tx_khz</ipxact:name>
-            <ipxact:description>&lt;b&gt;i_clk_tx clock frequency&lt;/b&gt;</ipxact:description>
+            <ipxact:description>&lt;b&gt;i_clk_tx clock frequency in KHz&lt;/b&gt;</ipxact:description>
             <ipxact:bitOffset>0</ipxact:bitOffset>
             <ipxact:resets>
               <ipxact:reset>
@@ -2315,7 +2344,7 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:access>read-only</ipxact:access>
           <ipxact:field>
             <ipxact:name>clk_rx_khz</ipxact:name>
-            <ipxact:description>&lt;b&gt;i_clk_rx clock frequency&lt;/b&gt;</ipxact:description>
+            <ipxact:description>&lt;b&gt;i_clk_rx clock frequency in KHz&lt;/b&gt;</ipxact:description>
             <ipxact:bitOffset>0</ipxact:bitOffset>
             <ipxact:resets>
               <ipxact:reset>
@@ -2329,13 +2358,13 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:register>
         <ipxact:register>
           <ipxact:name>clk_pll_khz</ipxact:name>
-          <ipxact:description>&lt;b&gt;o_clk_pll clock frequency&lt;/b&gt;</ipxact:description>
+          <ipxact:description>&lt;b&gt;o_clk_pll clock frequency in KHz&lt;/b&gt;</ipxact:description>
           <ipxact:addressOffset>0x130</ipxact:addressOffset>
           <ipxact:size>32</ipxact:size>
           <ipxact:access>read-only</ipxact:access>
           <ipxact:field>
             <ipxact:name>clk_pll_khz</ipxact:name>
-            <ipxact:description>&lt;b&gt;o_clk_pll clock frequency&lt;/b&gt;</ipxact:description>
+            <ipxact:description>&lt;b&gt;o_clk_pll clock frequency in KHz&lt;/b&gt;</ipxact:description>
             <ipxact:bitOffset>0</ipxact:bitOffset>
             <ipxact:resets>
               <ipxact:reset>
@@ -2349,13 +2378,13 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:register>
         <ipxact:register>
           <ipxact:name>clk_tx_div_khz</ipxact:name>
-          <ipxact:description>&lt;b&gt;o_clk_tx_div clock frequency&lt;/b&gt;</ipxact:description>
+          <ipxact:description>&lt;b&gt;o_clk_tx_div clock frequency in KHz&lt;/b&gt;</ipxact:description>
           <ipxact:addressOffset>0x134</ipxact:addressOffset>
           <ipxact:size>32</ipxact:size>
           <ipxact:access>read-only</ipxact:access>
           <ipxact:field>
             <ipxact:name>clk_tx_div_khz</ipxact:name>
-            <ipxact:description>&lt;b&gt;o_clk_tx_div clock frequency&lt;/b&gt;</ipxact:description>
+            <ipxact:description>&lt;b&gt;o_clk_tx_div clock frequency in KHz&lt;/b&gt;</ipxact:description>
             <ipxact:bitOffset>0</ipxact:bitOffset>
             <ipxact:resets>
               <ipxact:reset>
@@ -2369,13 +2398,13 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:register>
         <ipxact:register>
           <ipxact:name>clk_rec_div64_khz</ipxact:name>
-          <ipxact:description>&lt;b&gt;o_clk_rec_div64 clock frequency&lt;/b&gt;</ipxact:description>
+          <ipxact:description>&lt;b&gt;o_clk_rec_div64 clock frequency in KHz&lt;/b&gt;</ipxact:description>
           <ipxact:addressOffset>0x138</ipxact:addressOffset>
           <ipxact:size>32</ipxact:size>
           <ipxact:access>read-only</ipxact:access>
           <ipxact:field>
             <ipxact:name>clk_rec_div64_khz</ipxact:name>
-            <ipxact:description>&lt;b&gt;o_clk_rec_div64 clock frequency&lt;/b&gt;</ipxact:description>
+            <ipxact:description>&lt;b&gt;o_clk_rec_div64 clock frequency in KHz&lt;/b&gt;</ipxact:description>
             <ipxact:bitOffset>0</ipxact:bitOffset>
             <ipxact:resets>
               <ipxact:reset>
@@ -2389,13 +2418,13 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:register>
         <ipxact:register>
           <ipxact:name>clk_rec_div_khz</ipxact:name>
-          <ipxact:description>&lt;b&gt;o_clk_rec_div clock frequency&lt;/b&gt;</ipxact:description>
+          <ipxact:description>&lt;b&gt;o_clk_rec_div clock frequency in KHz&lt;/b&gt;</ipxact:description>
           <ipxact:addressOffset>0x13c</ipxact:addressOffset>
           <ipxact:size>32</ipxact:size>
           <ipxact:access>read-only</ipxact:access>
           <ipxact:field>
             <ipxact:name>clk_rec_div_khz</ipxact:name>
-            <ipxact:description>&lt;b&gt;o_clk_rec_div clock frequency&lt;/b&gt;</ipxact:description>
+            <ipxact:description>&lt;b&gt;o_clk_rec_div clock frequency in KHz&lt;/b&gt;</ipxact:description>
             <ipxact:bitOffset>0</ipxact:bitOffset>
             <ipxact:resets>
               <ipxact:reset>
@@ -2481,9 +2510,2093 @@ https://fpgasoftware.intel.com/eula.-->
           </ipxact:field>
         </ipxact:register>
         <ipxact:register>
-          <ipxact:name>enable_rsfec</ipxact:name>
-          <ipxact:description>&lt;b&gt; Enable RS-REC &lt;/b&gt;&lt;p&gt;0: Disable RS-FEC 1:Enable RS-FEC &lt;/p&gt;</ipxact:description>
-          <ipxact:addressOffset>0x14c</ipxact:addressOffset>
+          <ipxact:name>tx_sync_counter_1L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x300</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_counter_1L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_async_counter_1L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x304</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_async_counter_1L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_sync_counter_1L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x308</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_sync_counter_1L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_async_counter_1L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x30c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_async_counter_1L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_cfg_1L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x310</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>31</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>30</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_dl_delay_1L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x314</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_delay_1L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_dl_delay_1L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x318</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_dl_delay_1L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_status_1L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x31c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>3</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>2</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether RX asynchronous counter values are valid: - 0: Invalid - 1: Valid&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_sync_counter_2L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x320</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_counter_2L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_async_counter_2L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x324</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_async_counter_2L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_sync_counter_2L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x328</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_sync_counter_2L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_async_counter_2L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x32c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_async_counter_2L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_cfg_2L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x330</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>31</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>30</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_dl_delay_2L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x334</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_delay_2L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_dl_delay_2L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x338</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_dl_delay_2L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_status_2L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x33c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>3</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>2</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether RX asynchronous counter values are valid: - 0: Invalid - 1: Valid&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_sync_counter_3L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x340</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_counter_3L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_async_counter_3L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x344</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_async_counter_3L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_sync_counter_3L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x348</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_sync_counter_3L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_async_counter_3L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x34c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_async_counter_3L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_cfg_3L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x350</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>31</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>30</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_dl_delay_3L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x354</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_delay_3L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_dl_delay_3L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x358</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_dl_delay_3L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_status_3L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x35c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>3</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>2</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether RX asynchronous counter values are valid: - 0: Invalid - 1: Valid&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_sync_counter_4L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x360</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_counter_4L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_async_counter_4L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x364</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_async_counter_4L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_sync_counter_4L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x368</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_sync_counter_4L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_async_counter_4L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x36c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_async_counter_4L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_cfg_4L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x370</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>31</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>30</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_dl_delay_4L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x374</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_delay_4L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_dl_delay_4L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x378</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_dl_delay_4L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_status_4L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x37c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>3</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>2</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether RX asynchronous counter values are valid: - 0: Invalid - 1: Valid&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_sync_counter_5L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x380</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_counter_5L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_async_counter_5L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x384</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_async_counter_5L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_sync_counter_5L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x388</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_sync_counter_5L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_async_counter_5L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x38c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_async_counter_5L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_cfg_5L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x390</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>31</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>30</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_dl_delay_5L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x394</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_delay_5L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_dl_delay_5L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x398</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_dl_delay_5L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_status_5L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x39c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>3</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>2</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether RX asynchronous counter values are valid: - 0: Invalid - 1: Valid&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_sync_counter_6L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3a0</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_counter_6L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_async_counter_6L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3a4</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_async_counter_6L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_sync_counter_6L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3a8</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_sync_counter_6L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_async_counter_6L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3ac</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_async_counter_6L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_cfg_6L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3b0</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>31</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>30</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_dl_delay_6L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3b4</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_delay_6L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_dl_delay_6L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3b8</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_dl_delay_6L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_status_6L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3bc</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>3</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>2</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether RX asynchronous counter values are valid: - 0: Invalid - 1: Valid&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_sync_counter_7L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3c0</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_counter_7L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_async_counter_7L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3c4</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_async_counter_7L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_sync_counter_7L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3c8</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_sync_counter_7L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_async_counter_7L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3cc</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_async_counter_7L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_cfg_7L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3d0</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>31</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>30</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_dl_delay_7L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3d4</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_delay_7L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_dl_delay_7L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3d8</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_dl_delay_7L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_status_7L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3dc</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>3</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>2</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether RX asynchronous counter values are valid: - 0: Invalid - 1: Valid&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_sync_counter_8L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3e0</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_counter_8L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_sync_counter_1L &lt;/b&gt;&lt;p&gt; TX synchronous counter value. Must be qualified with tx_sync_valid. &lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_async_counter_8L</ipxact:name>
+          <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3e4</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_async_counter_8L</ipxact:name>
+            <ipxact:description>&lt;b&gt; tx_async_counter_1L &lt;/b&gt;&lt;p&gt;TX asynchronous counter value. Must be qualified with tx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_sync_counter_8L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3e8</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_sync_counter_8L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_sync_counter_1L &lt;/b&gt;&lt;p&gt;RX synchronous counter value. Must be qualified with rx_sync_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_async_counter_8L</ipxact:name>
+          <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3ec</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_async_counter_8L</ipxact:name>
+            <ipxact:description>&lt;b&gt; rx_async_counter_1L &lt;/b&gt;&lt;p&gt;RX asynchronous counter value. Must be qualified with rx_async_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_cfg_8L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3f0</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>31</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_dl_restart</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>30</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_measure_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>tx_dl_delay_8L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3f4</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_dl_delay_8L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>rx_dl_delay_8L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3f8</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>rx_dl_delay_8L</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid. &lt;/b&gt;&lt;p&gt;Indicates DL measurement values in fixed-point format for TX datapath latency (in sampling_clk cycle). Must be qualified with tx_measure_valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>dl_status_8L</ipxact:name>
+          <ipxact:description>&lt;b&gt; Deterministic Latency Configuration &lt;/b&gt;&lt;p&gt;Deterministic Latency Configuration&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x3fc</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>tx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow TX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled  - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow TX deterministic latency (DL) measurements to be retaken.  - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>3</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>tx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/b&gt;&lt;p&gt;Issues a reset to allow RX deterministic latency (DL) measurements to be retaken. - 0: Reset disabled   - 1: Reset enabled.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>2</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_sync_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. &lt;/b&gt;&lt;p&gt;Indicates whether the TX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>1</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+          <ipxact:field>
+            <ipxact:name>rx_async_valid</ipxact:name>
+            <ipxact:description>&lt;b&gt; Indicates whether RX asynchronous counter values are valid: - 0: Invalid - 1: Valid&lt;/b&gt;&lt;p&gt;Indicates whether the RX deterministic latency (DL) measurement values are valid - 0: Invalid ; 1: Valid. Note: If block_lock is deasserted, this register is deasserted.&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin_control_register</ipxact:name>
+          <ipxact:description>&lt;b&gt; Soft cwbin control register &lt;/b&gt;&lt;p&gt;1 : resets the cwbin module &lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x400</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>cwbin_control_register</ipxact:name>
+            <ipxact:description>&lt;b&gt; Soft cwbin control register &lt;/b&gt;&lt;p&gt;1 : resets the cwbin module &lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x0</ipxact:value>
+                <ipxact:mask>0x1</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin0_A</ipxact:name>
+          <ipxact:description>&lt;b&gt; cwbin0_A &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 0 Errors are accumulated to 32 bit counter Block A&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x404</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>cwbin0_A</ipxact:name>
+            <ipxact:description>&lt;b&gt; cwbin0_A &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 0 Errors are accumulated to 32 bit counter Block A&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin1_A</ipxact:name>
+          <ipxact:description>&lt;b&gt; cwbin1_A &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 1 Errors are accumulated to 32 bit counter Block A&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x408</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>cwbin1_A</ipxact:name>
+            <ipxact:description>&lt;b&gt; cwbin1_A &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 1 Errors are accumulated to 32 bit counter Block A&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin2_A</ipxact:name>
+          <ipxact:description>&lt;b&gt; cwbin2_A &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 2 Errors are accumulated to 32 bit counter Block A&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x40c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>cwbin2_A</ipxact:name>
+            <ipxact:description>&lt;b&gt; cwbin2_A &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 2 Errors are accumulated to 32 bit counter Block A&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin3_A</ipxact:name>
+          <ipxact:description>&lt;b&gt; cwbin3_A &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 3 Errors are accumulated to 32 bit counter Block A&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x410</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>cwbin3_A</ipxact:name>
+            <ipxact:description>&lt;b&gt; cwbin3_A &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 3 Errors are accumulated to 32 bit counter Block A&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin0_B</ipxact:name>
+          <ipxact:description>&lt;b&gt; cwbin0_B &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 0 Errors are accumulated to 32 bit counter Block B&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x414</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>cwbin0_B</ipxact:name>
+            <ipxact:description>&lt;b&gt; cwbin0_B &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 0 Errors are accumulated to 32 bit counter Block B&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin1_B</ipxact:name>
+          <ipxact:description>&lt;b&gt; cwbin1_B &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 1 Errors are accumulated to 32 bit counter Block B&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x418</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>cwbin1_B</ipxact:name>
+            <ipxact:description>&lt;b&gt; cwbin1_B &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 1 Errors are accumulated to 32 bit counter Block B&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin2_B</ipxact:name>
+          <ipxact:description>&lt;b&gt; cwbin2_B &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 2 Errors are accumulated to 32 bit counter Block B&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x41c</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>cwbin2_B</ipxact:name>
+            <ipxact:description>&lt;b&gt; cwbin2_B &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 2 Errors are accumulated to 32 bit counter Block B&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin3_B</ipxact:name>
+          <ipxact:description>&lt;b&gt; cwbin3_B &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 3 Errors are accumulated to 32 bit counter Block B&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x420</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:field>
+            <ipxact:name>cwbin3_B</ipxact:name>
+            <ipxact:description>&lt;b&gt; cwbin3_B &lt;/b&gt;&lt;p&gt;Hard IP rsfec_corr_cwbin_cnt_0_3 - cwbin 3 Errors are accumulated to 32 bit counter Block B&lt;/p&gt;</ipxact:description>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:resets>
+              <ipxact:reset>
+                <ipxact:value>0x00000000</ipxact:value>
+                <ipxact:mask>0xffffffff</ipxact:mask>
+              </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+          </ipxact:field>
+        </ipxact:register>
+        <ipxact:register>
+          <ipxact:name>cwbin_timer</ipxact:name>
+          <ipxact:description>&lt;b&gt; cwbin_timer &lt;/b&gt;&lt;p&gt;soft cwbin timer timeout value,in each loop the hard cwbin registers will be read and accumulated in soft 32bit registers&lt;/p&gt;</ipxact:description>
+          <ipxact:addressOffset>0x424</ipxact:addressOffset>
           <ipxact:size>32</ipxact:size>
           <ipxact:access>read-write</ipxact:access>
         </ipxact:register>
@@ -5610,6 +7723,32 @@ https://fpgasoftware.intel.com/eula.-->
             <ipxact:addressOffset>0x110</ipxact:addressOffset>
             <ipxact:size>32</ipxact:size>
             <ipxact:access>read-only</ipxact:access>
+            <ipxact:field>
+              <ipxact:name>dlpulse_alignment</ipxact:name>
+              <ipxact:description>&lt;b&gt;DL Pulse Alignment&lt;/b&gt;&lt;p&gt;When 1, indicates that the start of the DL Pulse (am_valid) arrived on word_align=1.  When 0, DL Pulse started on word_align=0.&lt;/p&gt;</ipxact:description>
+              <ipxact:bitOffset>7</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>bitslip_cnt</ipxact:name>
+              <ipxact:description>&lt;b&gt;Bitslip count&lt;/b&gt;&lt;p&gt;Number of bit that slipped for align with valid syn header.&lt;/p&gt;</ipxact:description>
+              <ipxact:bitOffset>0</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x00</ipxact:value>
+                  <ipxact:mask>0x7f</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>7</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
           </ipxact:register>
           <ipxact:register>
             <ipxact:name>ptp_vl_data_lo_0</ipxact:name>
@@ -17579,6 +19718,45 @@ https://fpgasoftware.intel.com/eula.-->
             <ipxact:addressOffset>0x70</ipxact:addressOffset>
             <ipxact:size>32</ipxact:size>
             <ipxact:access>read-write</ipxact:access>
+            <ipxact:field>
+              <ipxact:name>lpbk_en</ipxact:name>
+              <ipxact:description>TX-RX loopback enable. This does not include UX/BK mapping </ipxact:description>
+              <ipxact:bitOffset>0</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>force_signal_ok</ipxact:name>
+              <ipxact:description>RX force signal_ok high - Unused</ipxact:description>
+              <ipxact:bitOffset>1</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>signal_ok_sel</ipxact:name>
+              <ipxact:description>RX select: sync'd or unsync'd - Unused</ipxact:description>
+              <ipxact:bitOffset>2</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+            </ipxact:field>
           </ipxact:register>
           <ipxact:register>
             <ipxact:name>e25g_s0_xcvrif_reg_13</ipxact:name>
@@ -17845,6 +20023,110 @@ https://fpgasoftware.intel.com/eula.-->
             <ipxact:addressOffset>0x110</ipxact:addressOffset>
             <ipxact:size>32</ipxact:size>
             <ipxact:access>read-only</ipxact:access>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_pfull</ipxact:name>
+              <ipxact:description>TX FIFO mode partially full flag</ipxact:description>
+              <ipxact:bitOffset>0</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_full</ipxact:name>
+              <ipxact:description>TX FIFO mode full flag</ipxact:description>
+              <ipxact:bitOffset>1</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_pempty</ipxact:name>
+              <ipxact:description>TX FIFO mode partially empty flag</ipxact:description>
+              <ipxact:bitOffset>2</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_empty</ipxact:name>
+              <ipxact:description>TX FIFO mode empty flag</ipxact:description>
+              <ipxact:bitOffset>3</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_underrun</ipxact:name>
+              <ipxact:description>TX FIFO underrun flag</ipxact:description>
+              <ipxact:bitOffset>4</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_overflow</ipxact:name>
+              <ipxact:description>TX FIFO overflow flag</ipxact:description>
+              <ipxact:bitOffset>5</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_gb_restarted</ipxact:name>
+              <ipxact:description>TX DV GB restarted flag</ipxact:description>
+              <ipxact:bitOffset>6</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_gb_reserved</ipxact:name>
+              <ipxact:description>TX DV GB reserved flag</ipxact:description>
+              <ipxact:bitOffset>7</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
           </ipxact:register>
           <ipxact:register>
             <ipxact:name>e25g_s0_xcvrif_stat_hold_1</ipxact:name>
@@ -17852,6 +20134,118 @@ https://fpgasoftware.intel.com/eula.-->
             <ipxact:addressOffset>0x114</ipxact:addressOffset>
             <ipxact:size>32</ipxact:size>
             <ipxact:access>read-write</ipxact:access>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_pfull</ipxact:name>
+              <ipxact:description>TX FIFO mode partially full sticky flag</ipxact:description>
+              <ipxact:bitOffset>0</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_full</ipxact:name>
+              <ipxact:description>TX FIFO mode full sticky flag</ipxact:description>
+              <ipxact:bitOffset>1</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_pempty</ipxact:name>
+              <ipxact:description>TX FIFO mode partially empty sticky flag</ipxact:description>
+              <ipxact:bitOffset>2</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_empty</ipxact:name>
+              <ipxact:description>TX FIFO mode empty sticky flag</ipxact:description>
+              <ipxact:bitOffset>3</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_underrun</ipxact:name>
+              <ipxact:description>TX FIFO underrun sticky flag</ipxact:description>
+              <ipxact:bitOffset>4</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_fifo_overflow</ipxact:name>
+              <ipxact:description>TX FIFO overflow sticky flag</ipxact:description>
+              <ipxact:bitOffset>5</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_gb_restarted</ipxact:name>
+              <ipxact:description>TX DV GB restarted sticky flag</ipxact:description>
+              <ipxact:bitOffset>6</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>tx_gb_reserved</ipxact:name>
+              <ipxact:description>TX DV GB reserved sticky flag</ipxact:description>
+              <ipxact:bitOffset>7</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
           </ipxact:register>
           <ipxact:register>
             <ipxact:name>e25g_s0_xcvrif_stat_inten_1</ipxact:name>
@@ -17873,6 +20267,110 @@ https://fpgasoftware.intel.com/eula.-->
             <ipxact:addressOffset>0x120</ipxact:addressOffset>
             <ipxact:size>32</ipxact:size>
             <ipxact:access>read-only</ipxact:access>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_pfull</ipxact:name>
+              <ipxact:description>RX FIFO mode partially full flag</ipxact:description>
+              <ipxact:bitOffset>0</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_full</ipxact:name>
+              <ipxact:description>RX FIFO mode full flag</ipxact:description>
+              <ipxact:bitOffset>1</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_pempty</ipxact:name>
+              <ipxact:description>RX FIFO mode partially empty flag</ipxact:description>
+              <ipxact:bitOffset>2</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_empty</ipxact:name>
+              <ipxact:description>RX FIFO mode empty flag</ipxact:description>
+              <ipxact:bitOffset>3</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_underrun</ipxact:name>
+              <ipxact:description>RX FIFO underrun flag</ipxact:description>
+              <ipxact:bitOffset>4</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_overflow</ipxact:name>
+              <ipxact:description>RX FIFO overflow flag</ipxact:description>
+              <ipxact:bitOffset>5</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_gb_restarted</ipxact:name>
+              <ipxact:description>RX GB restarted flag</ipxact:description>
+              <ipxact:bitOffset>6</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_gb_reserved</ipxact:name>
+              <ipxact:description>RX GB reserved flag</ipxact:description>
+              <ipxact:bitOffset>7</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-only</ipxact:access>
+            </ipxact:field>
           </ipxact:register>
           <ipxact:register>
             <ipxact:name>e25g_s0_xcvrif_stat_hold_4</ipxact:name>
@@ -17880,6 +20378,118 @@ https://fpgasoftware.intel.com/eula.-->
             <ipxact:addressOffset>0x124</ipxact:addressOffset>
             <ipxact:size>32</ipxact:size>
             <ipxact:access>read-write</ipxact:access>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_pfull</ipxact:name>
+              <ipxact:description>RX FIFO mode partially full sticky flag</ipxact:description>
+              <ipxact:bitOffset>0</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_full</ipxact:name>
+              <ipxact:description>RX FIFO mode full sticky flag</ipxact:description>
+              <ipxact:bitOffset>1</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_pempty</ipxact:name>
+              <ipxact:description>RX FIFO mode partially empty sticky flag</ipxact:description>
+              <ipxact:bitOffset>2</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_empty</ipxact:name>
+              <ipxact:description>RX FIFO mode empty sticky flag</ipxact:description>
+              <ipxact:bitOffset>3</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_underrun</ipxact:name>
+              <ipxact:description>RX FIFO underrun sticky flag</ipxact:description>
+              <ipxact:bitOffset>4</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_fifo_overflow</ipxact:name>
+              <ipxact:description>RX FIFO overflow sticky flag</ipxact:description>
+              <ipxact:bitOffset>5</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_gb_restarted</ipxact:name>
+              <ipxact:description>RX GB restarted sticky flag</ipxact:description>
+              <ipxact:bitOffset>6</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
+            <ipxact:field>
+              <ipxact:name>rx_gb_reserved</ipxact:name>
+              <ipxact:description>RX GB reserved sticky flag</ipxact:description>
+              <ipxact:bitOffset>7</ipxact:bitOffset>
+              <ipxact:resets>
+                <ipxact:reset>
+                  <ipxact:value>0x0</ipxact:value>
+                  <ipxact:mask>0x1</ipxact:mask>
+                </ipxact:reset>
+              </ipxact:resets>
+              <ipxact:bitWidth>1</ipxact:bitWidth>
+              <ipxact:access>read-write</ipxact:access>
+              <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            </ipxact:field>
           </ipxact:register>
           <ipxact:register>
             <ipxact:name>e25g_s0_xcvrif_stat_inten_4</ipxact:name>
@@ -35627,7 +38237,7 @@ https://fpgasoftware.intel.com/eula.-->
       <ipxact:vendor>Intel Corporation</ipxact:vendor>
       <ipxact:library>ftile_eth_8x10g</ipxact:library>
       <ipxact:name>eth_f</ipxact:name>
-      <ipxact:version>6.0.0</ipxact:version>
+      <ipxact:version>8.0.0</ipxact:version>
     </altera:entity_info>
     <altera:altera_module_parameters>
       <ipxact:parameters>
@@ -35665,6 +38275,11 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:name>fgt_tx_pll_k_cnt</ipxact:name>
           <ipxact:displayName>K-Counter</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="fgt_tx_pll_refclk_freq_mhz" type="string">
+          <ipxact:name>fgt_tx_pll_refclk_freq_mhz</ipxact:name>
+          <ipxact:displayName>PMA reference frequency</ipxact:displayName>
+          <ipxact:value>156.250000</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="fgt_rx_pll_manual_enable" type="int">
           <ipxact:name>fgt_rx_pll_manual_enable</ipxact:name>
@@ -35731,6 +38346,11 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>Ethernet rate</ipxact:displayName>
           <ipxact:value>10G</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="CUSTOM_RATE_GUI" type="real">
+          <ipxact:name>CUSTOM_RATE_GUI</ipxact:name>
+          <ipxact:displayName>Custom Ethernet line rate</ipxact:displayName>
+          <ipxact:value>25.78125</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="CLIENT_INT_GUI" type="int">
           <ipxact:name>CLIENT_INT_GUI</ipxact:name>
           <ipxact:displayName>Client interface</ipxact:displayName>
@@ -35769,7 +38389,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="SYSPLL_RATE_GUI" type="int">
           <ipxact:name>SYSPLL_RATE_GUI</ipxact:name>
           <ipxact:displayName>System PLL frequency</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+          <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="SYSPLL_CUSTOM_GUI" type="real">
           <ipxact:name>SYSPLL_CUSTOM_GUI</ipxact:name>
@@ -35786,9 +38406,34 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>Include Deterministic Latency interface</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="ENABLE_DL_ML_GUI" type="int">
+          <ipxact:name>ENABLE_DL_ML_GUI</ipxact:name>
+          <ipxact:displayName>Include Deterministic Latency Measurement</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="ENABLE_CWBIN_GUI" type="int">
+          <ipxact:name>ENABLE_CWBIN_GUI</ipxact:name>
+          <ipxact:displayName>Include 32bit soft CWBIN counters</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="REFCLK_CWBIN_GUI" type="real">
+          <ipxact:name>REFCLK_CWBIN_GUI</ipxact:name>
+          <ipxact:displayName>Reconfig clock frequency</ipxact:displayName>
+          <ipxact:value>100.0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="enable_cdr_clkout" type="int">
+          <ipxact:name>enable_cdr_clkout</ipxact:name>
+          <ipxact:displayName>Enable dedicated CDR clock output</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="ENABLE_RX_DIV33_CLK" type="int">
           <ipxact:name>ENABLE_RX_DIV33_CLK</ipxact:name>
-          <ipxact:displayName>Agilex USXGMII 1588 enablement</ipxact:displayName>
+          <ipxact:displayName>Agilex USXGMII 1588 RX DIV33 REC clock enablement</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="ENABLE_TX_DIV32_CLK" type="int">
+          <ipxact:name>ENABLE_TX_DIV32_CLK</ipxact:name>
+          <ipxact:displayName>Agilex USXGMII 1588 TX DIV32 REC clock enablement</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="PREAMBLE_PORTS" type="int">
@@ -35831,6 +38476,11 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>GEN_BASE_PROFILE</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="SIP_TAG" type="int">
+          <ipxact:name>SIP_TAG</ipxact:name>
+          <ipxact:displayName>SIP_TAG</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="GEN_SEC_PROFILE" type="int">
           <ipxact:name>GEN_SEC_PROFILE</ipxact:name>
           <ipxact:displayName>GEN_SEC_PROFILE</ipxact:displayName>
@@ -35854,6 +38504,11 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="GENERATE_SYSPLL" type="int">
           <ipxact:name>GENERATE_SYSPLL</ipxact:name>
           <ipxact:displayName>GENERATE_SYSPLL</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="DV_CWBIN_TIMEOUT" type="int">
+          <ipxact:name>DV_CWBIN_TIMEOUT</ipxact:name>
+          <ipxact:displayName>DV_CWBIN_TIMEOUT</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="ED_PACKET_GEN" type="int">
@@ -36166,6 +38821,16 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>device_highspeed_tile</ipxact:displayName>
           <ipxact:value>F-Tile</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="device_speed_grade" type="string">
+          <ipxact:name>device_speed_grade</ipxact:name>
+          <ipxact:displayName>device_speed_grade</ipxact:displayName>
+          <ipxact:value>2</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="device_iobank_rev" type="string">
+          <ipxact:name>device_iobank_rev</ipxact:name>
+          <ipxact:displayName>device_iobank_rev</ipxact:displayName>
+          <ipxact:value>IO96A_REVB0</ipxact:value>
+        </ipxact:parameter>
       </ipxact:parameters>
     </altera:altera_module_parameters>
     <altera:altera_system_parameters>
@@ -36173,7 +38838,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="board" type="string">
           <ipxact:name>board</ipxact:name>
           <ipxact:displayName>Board</ipxact:displayName>
-          <ipxact:value>Unknown</ipxact:value>
+          <ipxact:value>Intel Agilex I-Series FPGA Development Kit DK-DEV-AGI027RES</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="device" type="string">
           <ipxact:name>device</ipxact:name>
@@ -36388,9 +39053,7 @@ https://fpgasoftware.intel.com/eula.-->
       <altera:interface_mapping altera:name="o_tx_pll_locked" altera:internal="eth_f_0.o_tx_pll_locked"></altera:interface_mapping>
       <altera:interface_mapping altera:name="o_tx_rst_ack_n" altera:internal="eth_f_0.o_tx_rst_ack_n"></altera:interface_mapping>
       <altera:interface_mapping altera:name="pfc_ports" altera:internal="eth_f_0.pfc_ports" altera:type="conduit" altera:dir="end">
-        <altera:port_mapping altera:name="i_tx_pause" altera:internal="i_tx_pause"></altera:port_mapping>
         <altera:port_mapping altera:name="i_tx_pfc" altera:internal="i_tx_pfc"></altera:port_mapping>
-        <altera:port_mapping altera:name="o_rx_pause" altera:internal="o_rx_pause"></altera:port_mapping>
         <altera:port_mapping altera:name="o_rx_pfc" altera:internal="o_rx_pfc"></altera:port_mapping>
       </altera:interface_mapping>
       <altera:interface_mapping altera:name="reconfig_eth_slave" altera:internal="eth_f_0.reconfig_eth_slave" altera:type="avalon" altera:dir="end">
@@ -36432,6 +39095,10 @@ https://fpgasoftware.intel.com/eula.-->
         <altera:port_mapping altera:name="i_rx_serial_n" altera:internal="i_rx_serial_n"></altera:port_mapping>
         <altera:port_mapping altera:name="o_tx_serial" altera:internal="o_tx_serial"></altera:port_mapping>
         <altera:port_mapping altera:name="o_tx_serial_n" altera:internal="o_tx_serial_n"></altera:port_mapping>
+      </altera:interface_mapping>
+      <altera:interface_mapping altera:name="sfc_ports" altera:internal="eth_f_0.sfc_ports" altera:type="conduit" altera:dir="end">
+        <altera:port_mapping altera:name="i_tx_pause" altera:internal="i_tx_pause"></altera:port_mapping>
+        <altera:port_mapping altera:name="o_rx_pause" altera:internal="o_rx_pause"></altera:port_mapping>
       </altera:interface_mapping>
       <altera:interface_mapping altera:name="status_ports" altera:internal="eth_f_0.status_ports" altera:type="conduit" altera:dir="end">
         <altera:port_mapping altera:name="i_stats_snapshot" altera:internal="i_stats_snapshot"></altera:port_mapping>
