@@ -39,6 +39,14 @@ set ETH_PORT_LANES(0) 4
 set ETH_PORT_LANES(1) 4
 set ETH_PORT_LANES(2) 4
 set ETH_PORT_LANES(3) 4
+# EHIP_PORT_TYPE is an array where each index represents given ETH_PORT and
+# each index has associated a required type of IP core, which this port has.
+# NOTE: at this moment, all ports must have same type of IP core !
+# 0 = normal type, 2 = Low Latency type
+set EHIP_PORT_TYPE(0) $env(ETH_PORT_TYPE)
+set EHIP_PORT_TYPE(1) $env(ETH_PORT_TYPE)
+set EHIP_PORT_TYPE(2) $env(ETH_PORT_TYPE)
+set EHIP_PORT_TYPE(3) $env(ETH_PORT_TYPE)
 
 # ------------------------------------------------------------------------------
 # PCIe parameters (not all combinations work):
