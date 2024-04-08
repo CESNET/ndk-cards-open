@@ -25,9 +25,11 @@ set BOOT_TYPE 2
 # Achitecture of Network module
 if { $ETH_PORT_SPEED(0) == 100 } {
     set NET_MOD_ARCH "CMAC"
-} elseif { $ETH_PORT_SPEED(0) == 40 } {
+} elseif { $ETH_PORT_SPEED(0) == 40 && $EHIP_PORT_TYPE(0) == 0 } {
     set NET_MOD_ARCH "40GE"
-} elseif { $ETH_PORT_SPEED(0) == 10 } {
+} elseif { $ETH_PORT_SPEED(0) == 40 && $EHIP_PORT_TYPE(0) == 2 } {
+    set NET_MOD_ARCH "CESNET_LL40GE"
+} elseif { $ETH_PORT_SPEED(0) == 10 && $EHIP_PORT_TYPE(0) == 2 } {
     set NET_MOD_ARCH "CESNET_LL10GE"
 } else {
     error "Unsupported Ethernet port speed $ETH_PORT_SPEED(0) !"

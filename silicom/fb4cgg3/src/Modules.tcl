@@ -13,6 +13,7 @@ set SPI_FLASH_DRIVER_BASE "$ENTITY_BASE/comp/spi_flash_driver/"
 set BOOT_CTRL_BASE        "$OFM_PATH/../core/intel/src/comp/boot_ctrl"
 set AXI2AVMM_BRIDGE_BASE  "$OFM_PATH/comp/mem_tools/convertors/axi2avmm_ddr_bridge"
 set GTY_10GE_LL_BASE      "$OFM_PATH/../modules/hft/comp/eth_phy/10ge/pma/ip_refclk_161m"
+set GTY_40GE_LL_BASE      "$OFM_PATH/../modules/hft/comp/eth_phy/40ge/pma/ip/gty_gbaser40_ll_refclk_161m"
 
 # Components
 lappend COMPONENTS [list "FPGA_COMMON"      $ARCHGRP_ARR(CORE_BASE)  $ARCHGRP]
@@ -34,6 +35,8 @@ if { $ARCHGRP_ARR(NET_MOD_ARCH) == "40GE"} {
     lappend MOD "$ENTITY_BASE/ip/gty_40ge/gty_40ge.xci"
 } elseif { $ARCHGRP_ARR(NET_MOD_ARCH) == "CESNET_LL10GE"} {
     lappend MOD "$GTY_10GE_LL_BASE/gty_gbaser_ll.xci"
+} elseif { $ARCHGRP_ARR(NET_MOD_ARCH) == "CESNET_LL40GE"} {
+    lappend MOD "$GTY_40GE_LL_BASE/gty_gbaser40_ll.xci"
 } elseif { $ARCHGRP_ARR(NET_MOD_ARCH) == "CMAC"} {
     lappend MOD "$ENTITY_BASE/ip/cmac_eth_1x100g/cmac_eth_1x100g.xci"
 }
