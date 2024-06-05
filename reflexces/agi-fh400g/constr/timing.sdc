@@ -195,7 +195,7 @@ set FHIP_25G8_10G8_CLK_CH22 [get_clocks ag_i|network_mod_i|eth_core_g[0].network
 set FHIP_25G8_10G8_CLK_CH19 [get_clocks ag_i|network_mod_i|eth_core_g[0].network_mod_core_i|FTILE_MULTIRATE_ETH_8x25G1_8x10G1_g.eth_ip_g[4].FTILE_MULTIRATE_ETH_8x25G1_8x10G1_i|ftile_eth_ip_i|eth_f_dr_0|tx_clkout|ch19]
 set FHIP_25G8_10G8_CLK_CH23 [get_clocks ag_i|network_mod_i|eth_core_g[0].network_mod_core_i|FTILE_MULTIRATE_ETH_8x25G1_8x10G1_g.eth_ip_g[0].FTILE_MULTIRATE_ETH_8x25G1_8x10G1_i|ftile_eth_ip_i|eth_f_dr_0|tx_clkout|ch23]
 
-# Fix hold timing issues for 28G8_10G8 Multirate design 
+# Fix hold timing issues for 25G8_10G8 Multirate design
 set_clock_groups -asynchronous -group $FHIP_25G8_10G8_CLK_CH23 -group $FHIP_25G8_10G8_CLK_CH16
 set_clock_groups -asynchronous -group $MI_CLK_CH3              -group $FHIP_25G8_10G8_CLK_CH16
 set_clock_groups -asynchronous -group $FHIP_25G8_10G8_CLK_CH23 -group $FHIP_25G8_10G8_CLK_CH20
@@ -219,5 +219,6 @@ set FHIP_100G2MR_CLK_CH19 [get_clocks ag_i|network_mod_i|eth_core_g[0].network_m
 set FHIP_100G2MR_CLK_CH23 [get_clocks ag_i|network_mod_i|eth_core_g[0].network_mod_core_i|FTILE_MULTIRATE_ETH_2x100G4_g.eth_ip_g[0].FTILE_MULTIRATE_ETH_2x100G4_i|ftile_eth_ip_i|eth_f_dr_0|tx_clkout|ch23]
 
 # Fix hold timing issues for 100G2 Multirate design 
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_100G2MR_CLK_CH19
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_100G2MR_CLK_CH23
+set_clock_groups -asynchronous -group $FHIP_100G2MR_CLK_CH23 -group $FHIP_100G2MR_CLK_CH19
+set_clock_groups -asynchronous -group $MI_CLK_CH3            -group $FHIP_100G2MR_CLK_CH19
+set_clock_groups -asynchronous -group $MI_CLK_CH3            -group $FHIP_100G2MR_CLK_CH23
