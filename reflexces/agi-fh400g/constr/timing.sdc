@@ -98,21 +98,21 @@ set FHIP_50G8_CLK_CH21 [get_clocks ag_i|network_mod_i|eth_core_g[0].network_mod_
 set FHIP_50G8_CLK_CH23 [get_clocks ag_i|network_mod_i|eth_core_g[0].network_mod_core_i|ftile_8x50g1_g.eth_ip_g[0].FTILE_8x50g1_i|ftile_eth_ip_i|eth_f_0|tx_clkout|ch23]
 
 # Fix hold timing issues for 50G8 design 
-set_clock_groups -asynchronous -group $$FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH9
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_50G8_CLK_CH9
-set_clock_groups -asynchronous -group $$FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH11
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_50G8_CLK_CH11
-set_clock_groups -asynchronous -group $$FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH13
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_50G8_CLK_CH13
-set_clock_groups -asynchronous -group $$FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH17
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_50G8_CLK_CH17
-set_clock_groups -asynchronous -group $$FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH19
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_50G8_CLK_CH19
-set_clock_groups -asynchronous -group $$FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH15
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_50G8_CLK_CH15
-set_clock_groups -asynchronous -group $$FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH21
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_50G8_CLK_CH21
-set_clock_groups -asynchronous -group $MI_CLK_CH3          -group $FHIP_50G8_CLK_CH23
+set_clock_groups -asynchronous -group $FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH9
+set_clock_groups -asynchronous -group $MI_CLK_CH3         -group $FHIP_50G8_CLK_CH9
+set_clock_groups -asynchronous -group $FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH11
+set_clock_groups -asynchronous -group $MI_CLK_CH3         -group $FHIP_50G8_CLK_CH11
+set_clock_groups -asynchronous -group $FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH13
+set_clock_groups -asynchronous -group $MI_CLK_CH3         -group $FHIP_50G8_CLK_CH13
+set_clock_groups -asynchronous -group $FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH17
+set_clock_groups -asynchronous -group $MI_CLK_CH3         -group $FHIP_50G8_CLK_CH17
+set_clock_groups -asynchronous -group $FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH19
+set_clock_groups -asynchronous -group $MI_CLK_CH3         -group $FHIP_50G8_CLK_CH19
+set_clock_groups -asynchronous -group $FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH15
+set_clock_groups -asynchronous -group $MI_CLK_CH3         -group $FHIP_50G8_CLK_CH15
+set_clock_groups -asynchronous -group $FHIP_50G8_CLK_CH23 -group $FHIP_50G8_CLK_CH21
+set_clock_groups -asynchronous -group $MI_CLK_CH3         -group $FHIP_50G8_CLK_CH21
+set_clock_groups -asynchronous -group $MI_CLK_CH3         -group $FHIP_50G8_CLK_CH23
 
 
 # ============
