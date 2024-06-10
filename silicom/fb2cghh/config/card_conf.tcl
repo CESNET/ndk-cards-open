@@ -79,3 +79,9 @@ set DMA_RX_BLOCKING_MODE true
 # Other parameters:
 # ------------------------------------------------------------------------------
 set TSU_ENABLE true
+
+# ------------------------------------------------------------------------------
+# DDR4 parameters:
+# ------------------------------------------------------------------------------
+# External DDR4 memory settings (allowed values 2 or 0).
+set MEM_PORTS 2
