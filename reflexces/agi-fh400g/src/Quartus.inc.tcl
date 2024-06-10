@@ -15,12 +15,25 @@ source $CORE_BASE/Quartus.inc.tcl
 # The description of usage of this array is provided in the Parametrization section
 # of the NDK-CORE repository.
 set CARD_ARCHGRP(CORE_BASE)          $CORE_BASE
+set CARD_ARCHGRP(IP_BUILD_DIR)       $CARD_BASE/src/ip
 set CARD_ARCHGRP(NET_MOD_ARCH)       $NET_MOD_ARCH
 set CARD_ARCHGRP(PCIE_ENDPOINT_MODE) $PCIE_ENDPOINT_MODE
 # Second dimension because of addition of an element of another array, just for clarity.
 set CARD_ARCHGRP(ETH_PORT_SPEED,0)   $ETH_PORT_SPEED(0)
 set CARD_ARCHGRP(ETH_PORT_CHAN,0)    $ETH_PORT_CHAN(0)
 set CARD_ARCHGRP(EHIP_PORT_TYPE,0)   $EHIP_PORT_TYPE(0)
+
+# select fpga name
+set CARD_FPGA ""
+if {$BOARD_REV == 0} {
+    # first prototypes
+    set CARD_FPGA "AGIB027R29A1E2VR0"
+} elseif {$BOARD_REV == 1} {
+    set CARD_FPGA "AGIB027R29A1E2VR3"
+} else {
+    error "Unsupported BOARD_REV=$BOARD_REV! Supported values are: 0 or 1."
+}
+set CARD_ARCHGRP(FPGA) $CARD_FPGA
 
 # make lists from associative arrays
 set CARD_ARCHGRP_L [array get CARD_ARCHGRP]
@@ -34,17 +47,8 @@ lappend HIERARCHY(COMPONENTS) \
     [list "TOPLEVEL" $CARD_BASE/src $ARCHGRP_ALL]
 
 # Design parameters
-set SYNTH_FLAGS(MODULE) "FPGA"
-
-if {$BOARD_REV == 0} {
-    # first prototypes
-    set SYNTH_FLAGS(FPGA) "AGIB027R29A1E2VR0"
-} elseif {$BOARD_REV == 1} {
-    set SYNTH_FLAGS(FPGA) "AGIB027R29A1E2VR3"
-} else {
-    error "Unsupported BOARD_REV=$BOARD_REV! Supported values are: 0 or 1."
-}
-
+set SYNTH_FLAGS(MODULE)    "FPGA"
+set SYNTH_FLAGS(FPGA)      $CARD_FPGA
 set SYNTH_FLAGS(BITSTREAM) "RBF"
 # Enable Quartus Support-Logic Generation stage
 set SYNTH_FLAGS(QUARTUS_TLG) 1

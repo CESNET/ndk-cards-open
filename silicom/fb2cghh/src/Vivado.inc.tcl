@@ -27,6 +27,8 @@ set SYNTH_FLAGS(ROUTE_DIRECTIVE) "Explore"
 # The description of usage of this array is provided in the Parametrization section
 # of the NDK-CORE repository.
 set CARD_ARCHGRP(CORE_BASE)             $CORE_BASE
+set CARD_ARCHGRP(IP_BUILD_DIR)          $CARD_BASE/src/ip
+set CARD_ARCHGRP(IP_GEN_FILES)          false
 set CARD_ARCHGRP(PCIE_ENDPOINTS)        $PCIE_ENDPOINTS
 set CARD_ARCHGRP(PCIE_ENDPOINT_MODE)    $PCIE_ENDPOINT_MODE
 

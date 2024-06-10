@@ -14,10 +14,15 @@ source $CORE_BASE/Quartus.inc.tcl
 # The description of usage of this array is provided in the Parametrization section
 # of the NDK-CORE repository.
 set CARD_ARCHGRP(CORE_BASE)          $CORE_BASE
+set CARD_ARCHGRP(IP_BUILD_DIR)       $CARD_BASE/src/ip
 set CARD_ARCHGRP(PCIE_ENDPOINT_MODE) $PCIE_ENDPOINT_MODE
 set CARD_ARCHGRP(NET_MOD_ARCH)       $NET_MOD_ARCH
 # Second dimension because of addition of an element of another array, just for clarity.
 set CARD_ARCHGRP(ETH_PORT_SPEED,0)   $ETH_PORT_SPEED(0)
+
+# select fpga name
+set CARD_FPGA                        "AGFB014R24A2E2V"
+set CARD_ARCHGRP(FPGA)               $CARD_FPGA
 
 # make lists from associative arrays
 set CARD_ARCHGRP_L [array get CARD_ARCHGRP]
@@ -32,7 +37,7 @@ lappend HIERARCHY(COMPONENTS) \
 
 # Design parameters
 set SYNTH_FLAGS(MODULE)              "FPGA"
-set SYNTH_FLAGS(FPGA)                "AGFB014R24A2E2V"
+set SYNTH_FLAGS(FPGA)                $CARD_FPGA
 set SYNTH_FLAGS(BITSTREAM)           "OFS_PMCI"
 set SYNTH_FLAGS(OFS_PMCI_SCRIPT_DIR) $CARD_BASE/scripts/
 
