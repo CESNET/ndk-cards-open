@@ -143,7 +143,7 @@ architecture FULL of FPGA is
     constant DEVICE              : string  := "ULTRASCALE";
 
     -- DDR constants --
-    constant DDR_PORTS           : integer := 2;
+    constant DDR_PORTS           : integer := MEM_PORTS;
     constant DDR_ADDR_WIDTH      : integer := 29;
     constant DDR_BYTES           : integer := 9;
     --These values are IP core specific ... 
