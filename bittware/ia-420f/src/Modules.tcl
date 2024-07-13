@@ -57,7 +57,7 @@ foreach ip_comp $IP_COMPONENTS {
 
     # TODO: trivial check for time-saving purpose (invent better solution in the future)
     set ipfile $ARCHGRP_ARR(IP_BUILD_DIR)/[get_ip_filename $comp]
-    if {[file exists $ipfile]} {
+    if {[file exists $ipfile] && ![file exists $IP_MODIFY_BASE/$script\_ip.qpf]} {
         lappend MOD $ipfile
         continue
     }
