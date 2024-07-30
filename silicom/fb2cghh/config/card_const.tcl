@@ -23,6 +23,10 @@ if { $ETH_PORT_SPEED(0) == 100 } {
     set NET_MOD_ARCH "CMAC"
 } elseif { $ETH_PORT_SPEED(0) == 40 } {
     set NET_MOD_ARCH "40GE"
+} elseif { $ETH_PORT_SPEED(0) == 25 } {
+    set NET_MOD_ARCH "25G4"
+} elseif { $ETH_PORT_SPEED(0) == 10 } {
+    set NET_MOD_ARCH "10G4"
 } else {
     error "Unsupported Ethernet port speed $ETH_PORT_SPEED(0) !"
 }

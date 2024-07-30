@@ -38,9 +38,13 @@ lappend IP_COMPONENTS [list  "pcie"   "pcie4_uscale_plus"  "pcie4_uscale_plus"  
 lappend IP_COMPONENTS [list  "misc"   "xvc_vsec"           "xvc_vsec"             0      1]
 
 if {$ARCHGRP_ARR(NET_MOD_ARCH) eq "40GE"} {
-    lappend IP_COMPONENTS [list "eth"  "gty_40ge"          "gty_40ge"             0      1]
+    lappend IP_COMPONENTS [list "eth"  "gty_40ge"          "gty_40ge"                     0      1]
+} elseif { $ARCHGRP_ARR(NET_MOD_ARCH) eq "25G4" } {
+    lappend IP_COMPONENTS [list "eth"  "pcs_pma_4x25g"     "twenty_five_gig_eth_pcspma"   0      1]
+} elseif { $ARCHGRP_ARR(NET_MOD_ARCH) eq "10G4" } {
+    lappend IP_COMPONENTS [list "eth"  "pcs_pma_4x10g"     "ten_gig_eth_pcspma"           0      1]
 } else {
-    lappend IP_COMPONENTS [list "eth"  "cmac_eth_1x100g"   "cmac_eth_1x100g"      0      1]
+    lappend IP_COMPONENTS [list "eth"  "cmac_eth_1x100g"   "cmac_eth_1x100g"              0      1]
 }
 
 lappend MOD {*}[get_ip_mod_files $IP_COMPONENTS [array get ARCHGRP_ARR]]
