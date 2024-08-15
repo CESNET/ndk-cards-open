@@ -1507,9 +1507,9 @@ begin
         QSFP_MODPRS_N           => (others => '0'),
         QSFP_INT_N              => (others => '0'),
 
-        HBM_CLK                 => hbm_clk,
-        HBM_RESET               => hbm_reset,
-        HBM_INIT_DONE           => hbm_init_done,
+        HBM_CLK                 => (others => hbm_clk),
+        HBM_RESET               => (others => hbm_reset),
+        HBM_INIT_DONE           => (others => hbm_init_done),
 
         HBM_AXI_ARADDR          => hbm_axi_araddr,
         HBM_AXI_ARBURST         => hbm_axi_arburst,
