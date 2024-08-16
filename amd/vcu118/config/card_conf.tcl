@@ -48,7 +48,7 @@ set ETH_PORT_LANES(3) 4
 # ------------------------------------------------------------------------------
 
 # Set default PCIe configuration
-set PCIE_CONF "1xGen3x8LL"
+set PCIE_CONF "1xGen3x16"
 if { [info exist env(PCIE_CONF)] } {
     set PCIE_CONF $env(PCIE_CONF)
 }
