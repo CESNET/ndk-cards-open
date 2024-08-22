@@ -112,6 +112,9 @@ architecture FULL of FPGA is
     signal misc_in          : std_logic_vector(MISC_IN_WIDTH-1 downto 0) := (others => '0');
     signal misc_out         : std_logic_vector(MISC_OUT_WIDTH-1 downto 0);
 
+    signal status_led_g     : std_logic_vector(1 downto 0);
+    signal status_led_r     : std_logic_vector(1 downto 0);
+
 begin
 
     sysclk_ibuf_i : IBUFDS
@@ -168,6 +171,10 @@ begin
     boot_mi_ardy <= boot_mi_rd or boot_mi_wr;
     boot_mi_drdy <= boot_mi_rd;
     boot_mi_drd  <= (others => '0');
+
+    STATUS_LED(1 downto 0)  <= status_led_g;
+    STATUS_LED(2)           <= status_led_r(0);
+
     -- FPGA COMMON -------------------------------------------------------------
     cm_i : entity work.FPGA_COMMON
     generic map (
@@ -285,10 +292,8 @@ begin
         EMIF_CAL_FAIL           => (others => '0'),
         EMIF_AUTO_PRECHARGE     => open,
 
-        STATUS_LED_G(0)         => STATUS_LED(0),
-        STATUS_LED_G(1)         => STATUS_LED(1),
-        STATUS_LED_R(0)         => STATUS_LED(2),
-        STATUS_LED_R(1)         => open,
+        STATUS_LED_G            => status_led_g,
+        STATUS_LED_R            => status_led_r,
 
         PCIE_CLK                => open,
         PCIE_RESET              => open,

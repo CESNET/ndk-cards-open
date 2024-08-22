@@ -419,6 +419,8 @@ architecture FULL of FPGA is
     signal mem_avmm_burstcount    : slv_array_t(MEM_PORTS-1 downto 0)(MEM_BURST_WIDTH-1 downto 0);
     signal mem_avmm_writedata     : slv_array_t(MEM_PORTS-1 downto 0)(MEM_DATA_WIDTH-1 downto 0);
     signal mem_avmm_readdata      : slv_array_t(MEM_PORTS-1 downto 0)(MEM_DATA_WIDTH-1 downto 0);
+    signal mem_avmm_writedata_f   : slv_array_t(MEM_PORTS-1 downto 0)(576-1 downto 0) := (others => (others => '0'));
+    signal mem_avmm_readdata_f    : slv_array_t(MEM_PORTS-1 downto 0)(576-1 downto 0) := (others => (others => '0'));
     signal mem_avmm_readdatavalid : std_logic_vector(MEM_PORTS-1 downto 0);
      
     signal emif_rst_req           : std_logic_vector(MEM_PORTS-1 downto 0);
@@ -730,10 +732,8 @@ begin
             amm_read_0                => mem_avmm_read(0),
             amm_write_0               => mem_avmm_write(0),
             amm_address_0             => mem_avmm_address(0),
-            amm_readdata_0(MEM_DATA_WIDTH-1 downto 0)    => mem_avmm_readdata(0),
-            amm_readdata_0(576-1 downto MEM_DATA_WIDTH)  => open,
-            amm_writedata_0(MEM_DATA_WIDTH-1 downto 0)   => mem_avmm_writedata(0),
-            amm_writedata_0(576-1 downto MEM_DATA_WIDTH) => (others => '0'),
+            amm_readdata_0            => mem_avmm_readdata_f(0),
+            amm_writedata_0           => mem_avmm_writedata_f(0),
             amm_burstcount_0          => mem_avmm_burstcount(0),
             amm_readdatavalid_0       => mem_avmm_readdatavalid(0),
             amm_byteenable_0          => (others => '1'),
@@ -778,10 +778,8 @@ begin
             amm_read_0                => mem_avmm_read(1),
             amm_write_0               => mem_avmm_write(1),
             amm_address_0             => mem_avmm_address(1),
-            amm_readdata_0(MEM_DATA_WIDTH-1 downto 0)    => mem_avmm_readdata(1),
-            amm_readdata_0(576-1 downto MEM_DATA_WIDTH)  => open,
-            amm_writedata_0(MEM_DATA_WIDTH-1 downto 0)   => mem_avmm_writedata(1),
-            amm_writedata_0(576-1 downto MEM_DATA_WIDTH) => (others => '0'),
+            amm_readdata_0            => mem_avmm_readdata_f(1),
+            amm_writedata_0           => mem_avmm_writedata_f(1),
             amm_burstcount_0          => mem_avmm_burstcount(1),
             amm_readdatavalid_0       => mem_avmm_readdatavalid(1),
             amm_byteenable_0          => (others => '1'),
@@ -812,6 +810,11 @@ begin
             cal_debug_clk_clk       => mem_clk(0),
             cal_debug_reset_n_reset => mem_rst_n(0)
         );
+
+        mem_avmm_writedata_f(0)(MEM_DATA_WIDTH-1 downto 0)   <= mem_avmm_writedata(0);
+        mem_avmm_writedata_f(1)(MEM_DATA_WIDTH-1 downto 0)   <= mem_avmm_writedata(1);
+        mem_avmm_readdata(0) <= mem_avmm_readdata_f(0)(MEM_DATA_WIDTH-1 downto 0);
+        mem_avmm_readdata(1) <= mem_avmm_readdata_f(1)(MEM_DATA_WIDTH-1 downto 0);
 
         HPS_DDR4_DQ    <= (others => 'Z');
         HPS_DDR4_DQS   <= (others => 'Z');

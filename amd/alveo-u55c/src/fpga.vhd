@@ -8,6 +8,8 @@ library ieee;
 library unisim;
 library xpm;
 
+use xpm.vcomponents.all;
+
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
