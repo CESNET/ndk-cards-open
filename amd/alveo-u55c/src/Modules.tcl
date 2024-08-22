@@ -40,5 +40,11 @@ if {$ARCHGRP_ARR(NET_MOD_ARCH) != "EMPTY"} {
     lappend MOD "$ENTITY_BASE/ip/cmac_eth_1x100g/cmac_eth_1x100g.xci"
 }
 
+# HOTFIX: Use glbl module for simulation
+global NC_FLAGS
+if { [info exists NC_FLAGS] && "SIMULATION" in $NC_FLAGS} {
+    lappend MOD "/usr/local/fpga/Vivado/2023.2/data/verilog/src/glbl.v"
+}
+
 # Top-level
-lappend MOD "$ENTITY_BASE/fpga.vhd"
+lappend MOD [list "$ENTITY_BASE/fpga.vhd" SIM_MODULE glbl]
