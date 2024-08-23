@@ -42,8 +42,9 @@ if {$ARCHGRP_ARR(NET_MOD_ARCH) != "EMPTY"} {
 
 # HOTFIX: Use glbl module for simulation
 global NC_FLAGS
-if { [info exists NC_FLAGS] && "SIMULATION" in $NC_FLAGS} {
-    lappend MOD "/usr/local/fpga/Vivado/2023.2/data/verilog/src/glbl.v"
+if {[info exists NC_FLAGS] && "SIMULATION" in $NC_FLAGS} {
+    set VIVADO_PATH [string map {bin/vivado {}} [exec which vivado]]
+    lappend MOD "$VIVADO_PATH/data/verilog/src/glbl.v"
 }
 
 # Top-level
