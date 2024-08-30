@@ -36,8 +36,13 @@ proc do_adjust_ptile_pcie_ip_2x8 {} {
 	set_interface_property p1_pin_perst EXPORT_OF intel_pcie_ptile_ast_0.p1_pin_perst
 }
 
+proc do_add_bar2 {} {
+	set_instance_parameter_value intel_pcie_ptile_ast_0 {core16_pf0_bar2_address_width_user_hwtcl} {24}
+	set_instance_parameter_value intel_pcie_ptile_ast_0 {core16_pf0_bar2_type_user_hwtcl} {64-bit non-prefetchable memory}
+}
+
 # adjust parameters in "ptile_pcie_ip" system
-proc do_adjust_ptile_pcie_ip {device family ipname filename adjust_proc} {
+proc do_adjust_ptile_pcie_ip {device family ipname filename adjust_proc dma_type} {
 
 	load_system $filename
 	set_project_property DEVICE $device
@@ -66,6 +71,10 @@ proc do_adjust_ptile_pcie_ip {device family ipname filename adjust_proc} {
 	set_instance_parameter_value intel_pcie_ptile_ast_0 {core8_pf7_bar0_address_width_user_hwtcl} {16}
 	set_instance_parameter_value intel_pcie_ptile_ast_0 {standard_interface_selection_hwtcl} {0}
 
+	if {$dma_type == 4} {
+		do_add_bar2
+	}
+
 	# configuration-specific parameters
 	$adjust_proc
 
@@ -84,4 +93,5 @@ if {$PARAMS(PCIE_ENDPOINT_MODE) == 0} {
 	set cb do_adjust_ptile_pcie_ip_2x8
 }
 
-do_adjust_ptile_pcie_ip $PARAMS(IP_DEVICE) $PARAMS(IP_DEVICE_FAMILY) $PARAMS(IP_COMP_NAME) $PARAMS(IP_BUILD_DIR)/[get_ip_filename $PARAMS(IP_COMP_NAME)] $cb
+
+do_adjust_ptile_pcie_ip $PARAMS(IP_DEVICE) $PARAMS(IP_DEVICE_FAMILY) $PARAMS(IP_COMP_NAME) $PARAMS(IP_BUILD_DIR)/[get_ip_filename $PARAMS(IP_COMP_NAME)] $cb $PARAMS(DMA_TYPE)
