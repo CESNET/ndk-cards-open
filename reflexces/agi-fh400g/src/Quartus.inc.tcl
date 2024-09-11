@@ -30,8 +30,10 @@ if {$BOARD_REV == 0} {
     set CARD_FPGA "AGIB027R29A1E2VR0"
 } elseif {$BOARD_REV == 1} {
     set CARD_FPGA "AGIB027R29A1E2VR3"
+} elseif {$BOARD_REV == 2} {
+    set CARD_FPGA "AGIB027R29A1E2V"
 } else {
-    error "Unsupported BOARD_REV=$BOARD_REV! Supported values are: 0 or 1."
+    error "Unsupported BOARD_REV=$BOARD_REV! Supported values are: 0, 1 or 2."
 }
 set CARD_ARCHGRP(FPGA) $CARD_FPGA
 
@@ -63,6 +65,9 @@ if {$BOARD_REV == 0} {
 }
 if {$BOARD_REV == 1} {
     set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/device_r3.qsf"
+}
+if {$BOARD_REV == 2} {
+    set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/device.qsf"
 }
 set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/general.qsf"
 set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/hps.qsf"
