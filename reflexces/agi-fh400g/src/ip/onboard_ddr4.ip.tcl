@@ -3,11 +3,15 @@ package require -exact qsys 21.3
 array set PARAMS $IP_PARAMS_L
 source $PARAMS(CORE_BASE)/src/ip/common.tcl
 
-proc do_adjust_onboard_ddr4_ip_0 {} {
+proc do_adjust_onboard_ddr4_ip_0 {board_rev} {
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_BANK_GROUP_WIDTH} {1}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_DQ_WIDTH} {64}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_FORMAT_ENUM} {MEM_FORMAT_DISCRETE}
-	set_instance_parameter_value emif_fm_0 {MEM_DDR4_ROW_ADDR_WIDTH} {16}
+	if {$board_rev == 0 || $board_rev == 1} {
+		set_instance_parameter_value emif_fm_0 {MEM_DDR4_ROW_ADDR_WIDTH} {16}
+	} elseif {$board_rev == 2} {
+		set_instance_parameter_value emif_fm_0 {MEM_DDR4_ROW_ADDR_WIDTH} {17}
+	}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_SPEEDBIN_ENUM} {DDR4_SPEEDBIN_2666}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_TCCD_L_CYC} {7}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_TCL} {21}
@@ -25,7 +29,7 @@ proc do_adjust_onboard_ddr4_ip_0 {} {
 	set_instance_parameter_value emif_fm_0 {PHY_DDR4_MIMIC_HPS_EMIF} {1}
 }
 
-proc do_adjust_onboard_ddr4_ip_1 {} {
+proc do_adjust_onboard_ddr4_ip_1 {board_rev} {
 	set_instance_parameter_value emif_fm_0 {CTRL_DDR4_AUTO_PRECHARGE_EN} {1}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_AC_PARITY_LATENCY} {DDR4_AC_PARITY_LATENCY_4}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_ATCL_ENUM} {DDR4_ATCL_CL2}
@@ -71,7 +75,16 @@ proc do_adjust_onboard_ddr4_ip {device family ipname filename adjust_proc} {
 	set_instance_parameter_value emif_fm_0 {PHY_DDR4_USER_REF_CLK_FREQ_MHZ} {33.333}
 
 	# configuration-specific parameters
-	$adjust_proc
+	if {$device == "AGIB027R29A1E2VR0"} {
+		set board_rev 0
+	} elseif {$device == "AGIB027R29A1E2VR3"} {
+		set board_rev 1
+	} elseif {$device == "AGIB027R29A1E2V"} {
+		set board_rev 2
+	} else {
+		error "Incompatible FPGA device value: $device"
+	}
+	$adjust_proc $board_rev
 
 	set_interface_property pll_locked EXPORT_OF emif_fm_0.pll_locked
 
