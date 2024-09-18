@@ -95,7 +95,7 @@ module pmci_csr #(
 );
 
 localparam PMCI_DBG_MODE      = 0;
-localparam PMCI_RTL_VERSION   = 16'h0016;
+localparam PMCI_RTL_VERSION   = 16'h22;
 localparam PMCI_DFH_FTYPE     = 4'h3;     //DFH Feature Type
 localparam PMCI_DFH_RSVD      = 19'h0;    //DFH Reserved 
 

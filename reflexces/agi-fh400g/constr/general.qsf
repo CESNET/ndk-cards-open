@@ -33,7 +33,7 @@ set_global_assignment -name CVP_CONFDONE_OPEN_DRAIN OFF
 set_global_assignment -name HPS_DAP_SPLIT_MODE DISABLED
 set_global_assignment -name PWRMGT_DIRECT_FORMAT_COEFFICIENT_M 1
 set_global_assignment -name PWRMGT_DIRECT_FORMAT_COEFFICIENT_R 64
-set_global_assignment -name ACTIVE_SERIAL_CLOCK AS_FREQ_115MHZ_IOSC
+set_global_assignment -name ACTIVE_SERIAL_CLOCK AS_FREQ_100MHZ
 set_global_assignment -name GENERATE_COMPRESSED_SOF ON
 set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "LINEAR FORMAT"
 set_global_assignment -name PWRMGT_LINEAR_FORMAT_N "-13"
@@ -41,6 +41,8 @@ set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X4"
 #set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "AVST X32"
 
 set_global_assignment -name VERILOG_MACRO "ALTERA_EMIF_ENABLE_ISSP=1"
+
+set_global_assignment -name DEVICE_INITIALIZATION_CLOCK OSC_CLK_1_100MHZ
 
 # ==============================================================================
 #  Pinout and IO Standards

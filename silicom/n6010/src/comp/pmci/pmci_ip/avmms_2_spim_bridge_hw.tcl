@@ -41,7 +41,6 @@ set_fileset_property simvhd_fileset TOP_LEVEL avmms_2_spim_bridge
 # proc synth_callback_procedure { } {
 proc synth_callback_procedure { entity_name } {
    add_fileset_file avmms_2_spim_bridge.sv SYSTEM_VERILOG PATH "./custom_ip/spi_master/avmms_2_spim_bridge.sv"
-   add_fileset_file altera_avalon_sc_fifo.v VERILOG PATH "./custom_ip/spi_master/altera_avalon_sc_fifo.v"
    add_fileset_file altera_avalon_st_bytes_to_packets.v VERILOG PATH "./custom_ip/spi_master/altera_avalon_st_bytes_to_packets.v"
    add_fileset_file altera_avalon_st_packets_to_bytes.v VERILOG PATH "./custom_ip/spi_master/altera_avalon_st_packets_to_bytes.v"
 }
@@ -416,5 +415,25 @@ proc ip_elaborate { } {
    
    set_port_property avmm_dir_addr width_expr $dir_awidth
    set_port_property avmm_dir_burstcnt width_expr $dir_bcount
+
+# sc_fifo
+   add_hdl_instance             spi_sc_fifo altera_avalon_sc_fifo 19.3.2
+   set_instance_parameter_value spi_sc_fifo {BITS_PER_SYMBOL} {32}
+   set_instance_parameter_value spi_sc_fifo {CHANNEL_WIDTH} {0}
+   set_instance_parameter_value spi_sc_fifo {EMPTY_LATENCY} {3}
+   set_instance_parameter_value spi_sc_fifo {ENABLE_EXPLICIT_MAXCHANNEL} {0}
+   set_instance_parameter_value spi_sc_fifo {ERROR_WIDTH} {0}
+   set_instance_parameter_value spi_sc_fifo {EXPLICIT_MAXCHANNEL} {0}
+   set_instance_parameter_value spi_sc_fifo {FIFO_DEPTH} {16}
+   set_instance_parameter_value spi_sc_fifo {SYMBOLS_PER_BEAT} {1}
+   set_instance_parameter_value spi_sc_fifo {SYNC_RESET} {0}
+   set_instance_parameter_value spi_sc_fifo {USE_ALMOST_EMPTY_IF} {0}
+   set_instance_parameter_value spi_sc_fifo {USE_ALMOST_FULL_IF} {0}
+   set_instance_parameter_value spi_sc_fifo {USE_FILL_LEVEL} {0}
+   set_instance_parameter_value spi_sc_fifo {USE_MEMORY_BLOCKS} {1}
+   set_instance_parameter_value spi_sc_fifo {USE_PACKETS} {1}
+   set_instance_parameter_value spi_sc_fifo {USE_STORE_FORWARD} {0}
+
+
 
 }

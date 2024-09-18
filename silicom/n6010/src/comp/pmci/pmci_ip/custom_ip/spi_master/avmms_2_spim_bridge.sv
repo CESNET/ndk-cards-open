@@ -372,7 +372,7 @@ end : fifo_wr
 //------------------------------------------------------------------------------
 // FIFO for storing AVMM bursts
 //------------------------------------------------------------------------------
-altera_avalon_sc_fifo #(
+spi_sc_fifo #(
    .SYMBOLS_PER_BEAT    (1                ),
    .BITS_PER_SYMBOL     (32               ),
    .FIFO_DEPTH          (FIFO_DEPTH       ),
@@ -397,20 +397,7 @@ altera_avalon_sc_fifo #(
    .out_valid           (fifo_out_valid   ),
    .out_ready           (fifo_out_ready   ),
    .out_startofpacket   (fifo_out_sop     ),
-   .out_endofpacket     (fifo_out_eop     ),
-   .csr_address         (2'b00            ),
-   .csr_read            (1'b0             ),
-   .csr_write           (1'b0             ),
-   .csr_readdata        (                 ),
-   .csr_writedata       (32'h00000000     ),
-   .almost_full_data    (                 ),
-   .almost_empty_data   (                 ),
-   .in_empty            (1'b0             ),
-   .out_empty           (                 ),
-   .in_error            (1'b0             ),
-   .out_error           (                 ),
-   .in_channel          (1'b0             ),
-   .out_channel         (                 ) 
+   .out_endofpacket     (fifo_out_eop     )
 );
 
 //------------------------------------------------------------------------------

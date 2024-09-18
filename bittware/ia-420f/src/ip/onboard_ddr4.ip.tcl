@@ -4,8 +4,6 @@ array set PARAMS $IP_PARAMS_L
 source $PARAMS(CORE_BASE)/src/ip/common.tcl
 
 proc do_adjust_onboard_ddr4_ip_0 {} {
-	set_instance_parameter_value emif_fm_0 {EX_DESIGN_GUI_DDR4_HDL_FORMAT} {HDL_FORMAT_VHDL}
-	set_instance_parameter_value emif_fm_0 {EX_DESIGN_GUI_DDR4_PREV_PRESET} {TARGET_DEV_KIT_HPS_FM_PCIE_DDR4_CH1}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_RTT_NOM_ENUM} {DDR4_RTT_NOM_ODT_DISABLED}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_RTT_PARK} {DDR4_RTT_PARK_RZQ_4}
 	set_instance_parameter_value emif_fm_0 {MEM_DDR4_SPD_137_RCD_CA_DRV} {0}
