@@ -76,7 +76,7 @@ if {$PARAMS(PCIE_ENDPOINT_MODE) == 2} {
         CONFIG.pf0_bar2_64bit {true} \
         CONFIG.pf0_bar2_enabled {true} \
         CONFIG.pf0_bar2_scale {Megabytes} \
-        CONFIG.pf0_bar2_size {64} \
+        CONFIG.pf0_bar2_size {16} \
         CONFIG.pf0_bar2_type {Memory} \
     ] $IP
 
@@ -94,5 +94,10 @@ if {$PARAMS(PCIE_ENDPOINT_MODE) == 2} {
         CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH {X16} \
         CONFIG.axisten_if_width {512_bit} \
         CONFIG.msix_type {SOFT} \
+        CONFIG.pf0_bar2_64bit {true} \
+        CONFIG.pf0_bar2_enabled {true} \
+        CONFIG.pf0_bar2_scale {Megabytes} \
+        CONFIG.pf0_bar2_size {16} \
+        CONFIG.pf0_bar2_type {Memory} \
     ] $IP
 }

@@ -258,8 +258,8 @@ architecture FULL of FPGA is
     constant MISC_IN_WIDTH   : natural := 4;
     constant MISC_OUT_WIDTH  : natural := 4;
     constant ETH_LANES       : natural := 4;
-    constant DMA_MODULES     : natural := ETH_PORTS;
-    constant DMA_ENDPOINTS   : natural := tsel(PCIE_ENDPOINT_MODE=1,PCIE_ENDPOINTS,2*PCIE_ENDPOINTS);
+    constant DMA_MODULES     : natural := tsel(DMA_TYPE = 4, 1, ETH_PORTS);
+    constant DMA_ENDPOINTS   : natural := tsel(DMA_TYPE = 4 or PCIE_ENDPOINT_MODE=1,PCIE_ENDPOINTS,2*PCIE_ENDPOINTS);
     constant STATUS_LEDS     : natural := 4; -- fake leds
 
     -- DDR4

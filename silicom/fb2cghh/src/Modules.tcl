@@ -33,9 +33,6 @@ set ARCHGRP_ARR(USE_IP_SUBDIRS)   true
 # see '$ARCHGRP_ARR(CORE_BASE)/src/ip/common.tcl' for more information regarding the fields
 #                         script_path     script_name          ip_comp_name     type  modify
 lappend IP_COMPONENTS [list  "mem"    "axi_quad_spi_0"     "axi_quad_spi_0"       0      1]
-lappend IP_COMPONENTS [list  "mem"    "ddr4_axi"           "ddr4_axi"             0      1]
-lappend IP_COMPONENTS [list  "pcie"   "pcie4_uscale_plus"  "pcie4_uscale_plus"    0      1]
-lappend IP_COMPONENTS [list  "misc"   "xvc_vsec"           "xvc_vsec"             0      1]
 
 if {$ARCHGRP_ARR(NET_MOD_ARCH) eq "40GE"} {
     lappend IP_COMPONENTS [list "eth"  "gty_40ge"          "gty_40ge"                     0      1]
@@ -45,6 +42,16 @@ if {$ARCHGRP_ARR(NET_MOD_ARCH) eq "40GE"} {
     lappend IP_COMPONENTS [list "eth"  "pcs_pma_4x10g"     "ten_gig_eth_pcspma"           0      1]
 } else {
     lappend IP_COMPONENTS [list "eth"  "cmac_eth_1x100g"   "cmac_eth_1x100g"              0      1]
+}
+
+if {$ARCHGRP_ARR(MEM_PORTS) > 0} {
+    lappend IP_COMPONENTS [list  "mem"    "ddr4_axi"           "ddr4_axi"             0      1]
+}
+
+lappend IP_COMPONENTS [list  "pcie"   "pcie4_uscale_plus"  "pcie4_uscale_plus"    0      1]
+
+if {$ARCHGRP_ARR(VIRTUAL_DEBUG_ENABLE)} {
+    lappend IP_COMPONENTS [list  "misc"   "xvc_vsec"           "xvc_vsec"             0      1]
 }
 
 lappend MOD {*}[get_ip_mod_files $IP_COMPONENTS [array get ARCHGRP_ARR]]
