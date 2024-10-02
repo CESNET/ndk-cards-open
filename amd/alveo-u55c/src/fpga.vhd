@@ -36,8 +36,12 @@ port (
     --MSP_UART_TXD        : out   std_logic;
 
     -- PCIe
-    PCIE_SYSCLK_P       : in    std_logic;
-    PCIE_SYSCLK_N       : in    std_logic;
+    PCIE_SYSCLK0_P      : in    std_logic;
+    PCIE_SYSCLK0_N      : in    std_logic;
+
+    PCIE_SYSCLK1_P      : in    std_logic;
+    PCIE_SYSCLK1_N      : in    std_logic;
+
     PCIE_SYSRST_N       : in    std_logic;
     PCIE_RX_P           : in    std_logic_vector(PCIE_LANES -1 downto 0);
     PCIE_RX_N           : in    std_logic_vector(PCIE_LANES -1 downto 0);
@@ -71,7 +75,7 @@ end entity;
 
 architecture FULL of FPGA is
 
-    constant PCIE_CLKS           : integer := 1;
+    constant PCIE_CLKS           : integer := tsel(PCIE_ENDPOINT_MODE = 1, 2, 1);
     constant PCIE_CONS           : integer := 1;
     constant MISC_IN_WIDTH       : integer := 4;
     constant MISC_OUT_WIDTH      : integer := 4;
@@ -95,6 +99,9 @@ architecture FULL of FPGA is
     signal sysclk_bufg      : std_logic;
     signal sysrst_cnt       : unsigned(4 downto 0) := (others => '0');
     signal sysrst           : std_logic := '1';
+
+    signal pcie_ref_clk_p   : std_logic_vector(PCIE_CLKS-1 downto 0);
+    signal pcie_ref_clk_n   : std_logic_vector(PCIE_CLKS-1 downto 0);
     
     signal eth_refclk_p     : std_logic_vector(2-1 downto 0);
     signal eth_refclk_n     : std_logic_vector(2-1 downto 0);
@@ -1474,8 +1481,8 @@ begin
         SYSCLK                  => sysclk_bufg,
         SYSRST                  => sysrst,
 
-        PCIE_SYSCLK_P(0)        => PCIE_SYSCLK_P,
-        PCIE_SYSCLK_N(0)        => PCIE_SYSCLK_N,
+        PCIE_SYSCLK_P           => pcie_ref_clk_p,
+        PCIE_SYSCLK_N           => pcie_ref_clk_n,
         PCIE_SYSRST_N(0)        => PCIE_SYSRST_N,
         PCIE_RX_P               => PCIE_RX_P,
         PCIE_RX_N               => PCIE_RX_N,
@@ -1593,6 +1600,9 @@ begin
         MISC_IN                 => misc_in,
         MISC_OUT                => misc_out
     );
+
+    pcie_ref_clk_p <= (PCIE_SYSCLK1_P & PCIE_SYSCLK0_P) when PCIE_ENDPOINT_MODE = 1 else (others => PCIE_SYSCLK1_P);
+    pcie_ref_clk_n <= (PCIE_SYSCLK1_N & PCIE_SYSCLK0_N) when PCIE_ENDPOINT_MODE = 1 else (others => PCIE_SYSCLK1_N);
 
     -- =========================================================================
     -- HBM MEMORY

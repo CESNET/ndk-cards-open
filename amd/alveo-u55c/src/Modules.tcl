@@ -27,6 +27,11 @@ if {$ARCHGRP_ARR(PCIE_ENDPOINTS) == 1} {
     } else {
         lappend MOD "$ENTITY_BASE/ip/pcie_gen3_x16/pcie4_uscale_plus.xci"
     }
+} elseif {$ARCHGRP_ARR(PCIE_ENDPOINTS) == 2} {
+    if {$ARCHGRP_ARR(PCIE_ENDPOINT_MODE) == 1} {
+        lappend MOD "$ENTITY_BASE/ip/pcie_gen4_x8/pcie4_uscale_plus/pcie4_uscale_plus.xci"
+        lappend MOD "$ENTITY_BASE/ip/pcie_gen4_x8/pcie4_uscale_plus_1/pcie4_uscale_plus_1.xci"
+    }
 }
 
 
