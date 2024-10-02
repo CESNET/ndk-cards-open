@@ -17,7 +17,7 @@ create_clock -name {PCIE1_CLK0} -period 10.000 [get_ports { PCIE1_CLK0_P }]
 create_clock -name {PCIE1_CLK1} -period 10.000 [get_ports { PCIE1_CLK1_P }]
 #create_clock -name {PCIE2_CLK0} -period 10.000 [get_ports { PCIE2_CLK0_P }]
 #create_clock -name {PCIE2_CLK1} -period 10.000 [get_ports { PCIE2_CLK1_P }]
-create_clock -name {QSFP_REFCLK_P} -period 6.400 [get_ports { QSFP_REFCLK_P }]
+create_clock -name {QSFP_REFCLK0} -period 6.400 [get_ports { QSFP_REFCLK0_P }]
 
 # Cut (set_false_path) this JTAG clock from all other clocks in the design
 set_clock_groups -asynchronous -group [get_clocks altera_reserved_tck]
