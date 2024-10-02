@@ -30,7 +30,7 @@ set QSFP_I2C_ADDR(0) "0xA0"
 # Checking of parameter compatibility
 # ------------------------------------------------------------------------------
 
-if { $BOARD_REV != 0 && $BOARD_REV != 1 } {
+if { $BOARD_REV != 0 && $BOARD_REV != 1 && $BOARD_REV != 2} {
     error "Incompatible BOARD_REV value: $BOARD_REV"
 }
 
